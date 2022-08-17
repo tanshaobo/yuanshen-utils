@@ -2,7 +2,7 @@
  * @Author: tanshaobo
  * @Date: 2022-02-09 13:13:51
  * @LastEditors: tanshaobo
- * @LastEditTime: 2022-04-21 22:19:24
+ * @LastEditTime: 2022-08-18 01:30:02
  * @Description: 算法
  * @FilePath: \yuanshen-utils\src\router\modules\algorithm.js
  */
@@ -10,7 +10,7 @@ import Home from '@/views/Index.vue'
 
 const algorithm = {
   path: '/algorithm',
-  label: '算法',
+  label: '天赋材料',
   name: 'Algorithm',
   component: Home,
   menu: true,
