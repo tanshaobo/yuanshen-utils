@@ -1,5 +1,4 @@
 <template>
-  角色天赋
   <el-table></el-table>
 </template>
 
