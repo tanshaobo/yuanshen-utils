@@ -1,0 +1,1 @@
+.grid-content{display:flex;align-items:center;justify-content:center;border-radius:4px;min-height:36px;line-height:36px;border:1px solid rgba(255,166,49,.8);cursor:pointer}.grid-content:hover{background:rgba(255,166,49,.5);color:#fff}.grid-content.active{background:rgba(255,166,49,.8);color:#fff}
