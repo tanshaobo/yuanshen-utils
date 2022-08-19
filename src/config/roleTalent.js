@@ -2,7 +2,7 @@
  * @Author: tanshaobo
  * @Date: 2022-08-18 02:30:08
  * @LastEditors: tanshaobo
- * @LastEditTime: 2022-08-19 22:54:15
+ * @LastEditTime: 2022-08-19 23:17:53
  * @Description: 角色天赋
  * @FilePath: \yuanshen-utils\src\config\roleTalent.js
  */
@@ -26,7 +26,7 @@ export const talentMaterial = [
     weekType: 2
   },
   {
-    id: 2,
+    id: 3,
     label: '诗文',
     areaId: 1,
     weekType: 3
