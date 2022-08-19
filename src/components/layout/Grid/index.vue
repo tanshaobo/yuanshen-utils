@@ -4,6 +4,9 @@
       <el-row v-for="(item, index) in showList" :key="index">
         <div class="column-item" v-for="(i, j) in item" :key="j">
           <el-card v-if="!i.remain">
+            <template v-if="hasHeader" #header>
+              <slot :item="i" name="headers"></slot>
+            </template>
             <slot :item="i" name="default"></slot>
           </el-card>
           <slot :item="i" name="main"></slot>
@@ -25,6 +28,10 @@ const props = defineProps({
   dataList: {
     type: Array,
     default: () => []
+  },
+  hasHeader: {
+    type: Boolean,
+    default: false
   }
 })
 const state = reactive({
