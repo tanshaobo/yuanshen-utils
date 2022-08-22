@@ -15,8 +15,9 @@
       {{ slotProps.item.areaName }} {{ slotProps.item.label }}</template
     >
     <template #default="slotProps">
-      <div v-for="i in slotProps.item.role" :key="i.id">
-        {{ i.Name }}
+      <div v-for="i in slotProps.item.role" :key="i.id" class="role-card">
+        <img :src="i.header" />
+        <span>{{ i.Name }}</span>
       </div>
     </template>
   </Grid>
@@ -75,8 +76,8 @@ getCurrentRoleList()
 const { activeIndex, currentRoleList } = toRefs(state)
 </script>
 
-<style lang="stylus">
-.grid-content
+<style lang="stylus" scoped>
+:deep(.grid-content)
   display flex
   align-items center
   justify-content center
@@ -85,10 +86,41 @@ const { activeIndex, currentRoleList } = toRefs(state)
   line-height 36px
   border 1px solid rgba(255,166,49, .8)
   cursor pointer
+  background rgba(255,166,49, 0)
+  transition all .3s
   &:hover
     background rgba(255,166,49, .5)
     color #ffffff
   &.active
     background rgba(255,166,49, .8)
     color #ffffff
+.grid
+  >>>.el-card__body
+    display flex
+    flex-wrap wrap
+    justify-content space-between
+    align-content space-around
+    .role-card
+      display flex
+      flex-direction column
+      width 60px
+      justify-content center
+      align-items center
+      border 1px solid transparent
+      border-radius 0px
+      transition all .3s
+      overflow hidden
+      img
+        width 100%
+        background-image linear-gradient(135deg, rgb(0,0,0) -60.4%, rgb(255,255,255) 145.2%)
+      span
+        font-size 12px
+      &:hover
+        border-color rgb(5, 222, 250)
+        border-radius 6px
+        background-image linear-gradient(135deg, rgb(0,0,0) -0.4%, rgb(255,255,255) 145.2%)
+        img
+          background-image linear-gradient(135deg, rgb(0,0,0) -0.4%, rgb(255,255,255) 145.2%)
+        span
+          color #fff
 </style>
