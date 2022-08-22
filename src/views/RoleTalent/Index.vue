@@ -95,7 +95,7 @@ const { activeIndex, currentRoleList } = toRefs(state)
     background rgba(255,166,49, .8)
     color #ffffff
 .grid
-  >>>.el-card__body
+  :deep(.el-card__body)
     display flex
     flex-wrap wrap
     justify-content space-between
