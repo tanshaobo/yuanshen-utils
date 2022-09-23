@@ -16,7 +16,7 @@
     >
     <template #default="slotProps">
       <div v-for="i in slotProps.item.role" :key="i.id" class="role-card">
-        <img :src="i.header" />
+        <img :src="i.headerURL ? i.headerURL : i.header" />
         <span>{{ i.Name }}</span>
       </div>
     </template>
@@ -24,12 +24,13 @@
 </template>
 
 <script setup>
-import { toRefs, reactive } from 'vue'
+import { ref, toRefs, reactive, onMounted } from 'vue'
 import area from '@/config/area'
 import roles from '@/config/role'
 import { weekType, talentMaterial } from '@/config/roleTalent'
 import deepCopyObject from '@/utils/deepCopyObject'
 import Grid from '@/components/layout/Grid/index.vue'
+import drawImage from '@/utils/drawImage'
 
 const weekData = [
   { id: 0, label: '周日' },
@@ -61,9 +62,19 @@ const getCurrentRoleList = () => {
   } else {
     currentTalent = deepCopyObject(talentMaterial)
   }
+  let headerObj = localStorage.getItem('headerObj')
+  headerObj = headerObj ? JSON.parse(headerObj) : {}
   state.currentRoleList = currentTalent.map((item) => {
     item.areaName = area.find((i) => i.AreaId == item.areaId).AreaName
-    item.role = roles.filter((i) => i.Talent == item.id || Array.isArray(i.Talent))
+    item.role = roles
+      .filter((i) => i.Talent == item.id || Array.isArray(i.Talent))
+      .map((item) => {
+        if (headerObj && headerObj[item.id]) {
+          item.headerURL = headerObj[item.id]
+        }
+        return item
+      })
+
     return item
   })
 }
@@ -74,6 +85,29 @@ const changeWeek = (id) => {
 getWeek()
 getCurrentRoleList()
 const { activeIndex, currentRoleList } = toRefs(state)
+
+onMounted(() => {
+  let headerObj = localStorage.getItem('headerObj')
+  if (headerObj) {
+    headerObj = JSON.parse(headerObj)
+  } else {
+    headerObj = {}
+  }
+  roles
+    .filter((item) => item.header)
+    .forEach((item) => {
+      if (!(headerObj && Object.prototype.hasOwnProperty.call(headerObj, item.id))) {
+        let p = drawImage(item.header)
+          .then((url) => {
+            headerObj[item.id] = url
+            localStorage.setItem('headerObj', JSON.stringify(headerObj))
+          })
+          .catch((err) => {
+            console.log(err)
+          })
+      }
+    })
+})
 </script>
 
 <style lang="stylus" scoped>
