@@ -1,3 +1,11 @@
+/*
+ * @Author: tanshaobo
+ * @Date: 2022-11-18 10:00:38
+ * @LastEditors: tanshaobo
+ * @LastEditTime: 2022-11-18 10:09:14
+ * @Description: file content
+ * @FilePath: \yuanshen-utils\.eslintrc.js
+ */
 module.exports = {
   globals: {
     defineEmits: true,
@@ -7,7 +15,8 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
-    node: true
+    node: true,
+    'vue/setup-compiler-macros': true
   },
   extends: [
     'plugin:vue/vue3-essential',

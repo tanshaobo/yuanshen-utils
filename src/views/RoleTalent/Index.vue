@@ -25,22 +25,15 @@
 
 <script setup>
 import { ref, toRefs, reactive, onMounted } from 'vue'
+import Grid from '@/components/layout/Grid/index.vue'
+
 import area from '@/config/area'
 import roles from '@/config/role'
 import { weekType, talentMaterial } from '@/config/roleTalent'
-import deepCopyObject from '@/utils/deepCopyObject'
-import Grid from '@/components/layout/Grid/index.vue'
-import drawImage from '@/utils/drawImage'
+import { weekData } from '@/config/common'
 
-const weekData = [
-  { id: 0, label: '周日' },
-  { id: 1, label: '周一' },
-  { id: 2, label: '周二' },
-  { id: 3, label: '周三' },
-  { id: 4, label: '周四' },
-  { id: 5, label: '周五' },
-  { id: 6, label: '周六' }
-]
+import deepCopyObject from '@/utils/deepCopyObject'
+import drawImage from '@/utils/drawImage'
 
 const state = reactive({
   activeIndex: 0,
