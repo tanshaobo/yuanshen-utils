@@ -2,7 +2,7 @@
  * @Author: tanshaobo
  * @Date: 2023-03-03 20:06:48
  * @LastEditors: tanshaobo
- * @LastEditTime: 2023-03-04 16:19:01
+ * @LastEditTime: 2023-03-04 16:59:21
  * @Description: file content
  * @FilePath: \yuanshen-utils\src\utils\indexDB\index.js
  */
@@ -20,7 +20,7 @@ const add = (dbName,storeName, data) => {
         addData(res, storeName, item)
       });
     }else{
-      addData(res, storeName, item)
+      addData(res, storeName, data)
     }
   })
 }

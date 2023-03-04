@@ -89,22 +89,22 @@ onMounted(() => {
   } else {
     headerObj = {}
   }
-  indexDB.add('DB', 'headerStore', roles)
 
   roles
-    .filter((item) => item.header)
-    .forEach(item => {
-      if (!(headerObj && Object.prototype.hasOwnProperty.call(headerObj, item.id))) {
-          let p = drawImage(item.header)
-          .then((url) => {
-            headerObj[item.id] = url
-            localStorage.setItem('headerObj', JSON.stringify(headerObj))
+  .filter((item) => item.header)
+  .forEach(item => {
+    if (!(headerObj && Object.prototype.hasOwnProperty.call(headerObj, item.id))) {
+      let p = drawImage(item.header)
+        .then((url) => {
+          headerObj[item.id] = url
+          localStorage.setItem('headerObj', JSON.stringify(headerObj))
+          indexDB.add('DB', 'headerStore', {headerId: item.id, headerURL: url})
 
-          })
-          .catch((err) => {
-            console.log(err)
-          })
-      }
+        })
+        .catch((err) => {
+          console.log(err)
+        })
+        }
     })
 })
 </script>
