@@ -34,6 +34,7 @@ import { weekData } from '@/config/common'
 
 import deepCopyObject from '@/utils/deepCopyObject'
 import drawImage from '@/utils/drawImage'
+import indexDB from '@/utils/indexDB'
 
 const state = reactive({
   activeIndex: 0,
@@ -77,6 +78,8 @@ const changeWeek = (id) => {
 }
 getWeek()
 getCurrentRoleList()
+
+
 const { activeIndex, currentRoleList } = toRefs(state)
 
 onMounted(() => {
@@ -86,6 +89,8 @@ onMounted(() => {
   } else {
     headerObj = {}
   }
+  indexDB.add('DB', 'headerStore', roles)
+
   roles
     .filter((item) => item.header)
     .forEach(item => {
@@ -94,6 +99,7 @@ onMounted(() => {
           .then((url) => {
             headerObj[item.id] = url
             localStorage.setItem('headerObj', JSON.stringify(headerObj))
+
           })
           .catch((err) => {
             console.log(err)

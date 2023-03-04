@@ -2,7 +2,7 @@
  * @Author: tanshaobo
  * @Date: 2023-03-03 20:06:48
  * @LastEditors: tanshaobo
- * @LastEditTime: 2023-03-03 20:13:15
+ * @LastEditTime: 2023-03-04 16:30:17
  * @Description: file content
  * @FilePath: \yuanshen-utils\src\utils\indexDB\openDB.js
  */
@@ -13,7 +13,7 @@
  * @param {string} version 数据库的版本
  * @return {object} 该函数会返回一个数据库实例
  */
-const openDB = (dbName, version = 1) => {
+const openDB = (dbName, storeName, version = 1) => {
   return new Promise((resolve, reject) => {
     //  兼容浏览器
     var indexedDB =
@@ -23,7 +23,7 @@ const openDB = (dbName, version = 1) => {
       window.msIndexedDB;
     let db;
     // 打开数据库，若没有则会创建
-    const request = indexedDB.open(dbName, storeName, version);
+    const request = indexedDB.open(dbName, version);
     // 数据库打开成功回调
     request.onsuccess = function (event) {
       db = event.target.result; // 数据库对象

@@ -2,7 +2,7 @@
  * @Author: tanshaobo
  * @Date: 2022-11-18 10:00:38
  * @LastEditors: tanshaobo
- * @LastEditTime: 2023-03-04 15:50:15
+ * @LastEditTime: 2023-03-04 16:04:52
  * @Description: file content
  * @FilePath: \yuanshen-utils\vite.config.js
  */
@@ -67,5 +67,3 @@ export default defineConfig({
   build,
   plugins: [vue()]
 })
-
-//
