@@ -88,9 +88,9 @@ onMounted(() => {
   }
   roles
     .filter((item) => item.header)
-    .forEach((item) => {
+    .forEach(item => {
       if (!(headerObj && Object.prototype.hasOwnProperty.call(headerObj, item.id))) {
-        let p = drawImage(item.header)
+          let p = drawImage(item.header)
           .then((url) => {
             headerObj[item.id] = url
             localStorage.setItem('headerObj', JSON.stringify(headerObj))
