@@ -2,7 +2,7 @@
  * @Author: tanshaobo
  * @Date: 2022-11-18 10:00:38
  * @LastEditors: tanshaobo
- * @LastEditTime: 2023-03-04 15:30:39
+ * @LastEditTime: 2023-03-04 15:50:15
  * @Description: file content
  * @FilePath: \yuanshen-utils\vite.config.js
  */
@@ -48,15 +48,15 @@ const css = {
 }
 const build ={
   outDir:  'docs', // 打包输出目录
-  rollupOptions: {
-    output: {
-      manualChunks(id) {
-        if (id.includes('node_modules')) {
-          return id.toString().split('node_modules/')[1].split('/')[0].toString();
-        }
-      }
-    }
-  }
+  // rollupOptions: {
+  //   output: {
+  //     manualChunks(id) {
+  //       if (id.includes('node_modules')) {
+  //         return id.toString().split('node_modules/')[1].split('/')[0].toString();
+  //       }
+  //     }
+  //   }
+  // }
 }
 // https://vitejs.dev/config/
 export default defineConfig({
