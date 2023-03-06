@@ -24,11 +24,11 @@
 </template>
 
 <script setup>
-import { ref, toRefs, reactive, onMounted } from 'vue'
+import { ref , toRefs, reactive, onMounted } from 'vue'
 import Grid from '@/components/layout/Grid/index.vue'
 
-import area from '@/config/area'
-import roles from '@/config/role'
+import area from '@/config/area';
+import roles from '@/config/role';
 import { weekType, talentMaterial } from '@/config/roleTalent'
 import { weekData } from '@/config/common'
 
@@ -40,9 +40,12 @@ const state = reactive({
   activeIndex: 0,
   currentRoleList: []
 })
+// 获取当前是周几
 const getWeek = () => {
   state.activeIndex = new Date().getDay()
 }
+
+// 获取当前角色列表
 const getCurrentRoleList = () => {
   let currentTalent = []
   let currentWeekType = Object.entries(weekType).reduce((i, j) => {
@@ -72,6 +75,7 @@ const getCurrentRoleList = () => {
     return item
   })
 }
+// 改变所选周
 const changeWeek = (id) => {
   state.activeIndex = id
   getCurrentRoleList()

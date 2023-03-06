@@ -2,7 +2,7 @@
  * @Author: tanshaobo
  * @Date: 2023-03-03 20:06:48
  * @LastEditors: tanshaobo
- * @LastEditTime: 2023-03-04 16:59:21
+ * @LastEditTime: 2023-03-06 09:45:42
  * @Description: file content
  * @FilePath: \yuanshen-utils\src\utils\indexDB\index.js
  */
@@ -16,11 +16,13 @@ import deleteByKey from "./deleteByKey";
 const add = (dbName,storeName, data) => {
   openDB(dbName,storeName).then(res => {
     if(Array.isArray(data)){
-      data.forEach(item => {
-        addData(res, storeName, item)
-      });
+      const p = data.map(item => addData(res, storeName, item))
+      return Promise.all(p)
+      // data.forEach(item => {
+      //   addData(res, storeName, item)
+      // });
     }else{
-      addData(res, storeName, data)
+      return addData(res, storeName, data)
     }
   })
 }
