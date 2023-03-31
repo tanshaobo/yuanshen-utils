@@ -2,7 +2,7 @@
  * @Author: tanshaobo
  * @Date: 2022-02-09 13:13:51
  * @LastEditors: tanshaobo
- * @LastEditTime: 2022-08-18 01:30:02
+ * @LastEditTime: 2023-03-31 16:46:44
  * @Description: 算法
  * @FilePath: \yuanshen-utils\src\router\modules\algorithm.js
  */
@@ -21,7 +21,7 @@ const algorithm = {
   children: [
     {
       path: '/algorithm',
-      label: '列表',
+      label: '天赋材料',
       name: 'AlgorithmList',
       menu: false,
       meta: {
@@ -30,7 +30,7 @@ const algorithm = {
           {
             path: '/algorithm',
             name: 'AlgorithmList',
-            label: '列表'
+            label: '天赋材料'
           }
         ]
       },
@@ -47,7 +47,7 @@ const algorithm = {
           {
             path: '/algorithm',
             name: 'AlgorithmList',
-            label: '列表'
+            label: '天赋材料'
           },
           {
             path: '/AlgorithmDetail',

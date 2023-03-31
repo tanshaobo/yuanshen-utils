@@ -1,3 +1,11 @@
+<!--
+ * @Author: tanshaobo
+ * @Date: 2022-11-18 10:00:38
+ * @LastEditors: tanshaobo
+ * @LastEditTime: 2023-03-31 16:44:20
+ * @Description: file content
+ * @FilePath: \yuanshen-utils\src\components\layout\SideMenu\components\MenuTree.vue
+-->
 <template>
   <template v-for="(item, index) in menu" :key="index + item.path">
     <el-menu-item
@@ -9,7 +17,7 @@
         {{ item.label }}
       </template>
     </el-menu-item>
-    <el-sub-menu v-else :index="item.path" :key="index + item.path">
+    <el-sub-menu v-else :index="item.path" :key="`${index}${item.path}`">
       <template #title>
         <span>{{ item.label }}</span>
       </template>
