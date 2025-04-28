@@ -2,24 +2,24 @@
  * @Author: tanshaobo
  * @Date: 2022-08-19 22:45:05
  * @LastEditors: tanshaobo
- * @LastEditTime: 2022-08-22 22:02:24
+ * @LastEditTime: 2025-04-28 01:01:18
  * @Description: 角色配置
  * @FilePath: \yuanshen-utils\src\config\role.js
  */
 
 export const roleList = [
-  {
-    id: '001',
-    Name: '空',
-    Talent: [],
-    header: ''
-  },
-  {
-    id: '002',
-    Name: '荧',
-    Talent: [],
-    header: ''
-  },
+  // {
+  //   id: '001',
+  //   Name: '空',
+  //   Talent: [],
+  //   header: ''
+  // },
+  // {
+  //   id: '002',
+  //   Name: '荧',
+  //   Talent: [],
+  //   header: ''
+  // },
   {
     id: '003',
     Name: '安柏',
