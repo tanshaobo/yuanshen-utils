@@ -4,7 +4,7 @@
  * @LastEditors: tanshaobo
  * @LastEditTime: 2025-04-28 15:17:51
  * @Description: 须弥-天赋
- * @FilePath: \yuanshen-utils\src\config\XuMi\talent.js
+ * @FilePath: \yuanshen-utils\src\config\Area\XuMi\talent.js
  */
 
 import { XuMi } from './index'

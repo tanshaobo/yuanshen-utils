@@ -4,7 +4,7 @@
  * @LastEditors: tanshaobo
  * @LastEditTime: 2025-04-28 03:36:10
  * @Description: 稻妻-天赋
- * @FilePath: \yuanshen-utils\src\config\DaoQi\talent.js
+ * @FilePath: \yuanshen-utils\src\config\Area\DaoQi\talent.js
  */
 import { DaoQi } from './index'
 

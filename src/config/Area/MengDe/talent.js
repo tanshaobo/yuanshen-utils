@@ -4,7 +4,7 @@
  * @LastEditors: tanshaobo
  * @LastEditTime: 2025-04-28 03:37:11
  * @Description: 蒙德-天赋
- * @FilePath: \yuanshen-utils\src\config\MengDe\talent.js
+ * @FilePath: \yuanshen-utils\src\config\Area\MengDe\talent.js
  */
 import { MengDe } from './index'
 

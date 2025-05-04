@@ -24,11 +24,11 @@
 </template>
 
 <script setup>
-import { ref , toRefs, reactive, onMounted } from 'vue'
+import { ref, toRefs, reactive, onMounted } from 'vue'
 import Grid from '@/components/layout/Grid/index.vue'
 
-import area from '@/config/area';
-import roles from '@/config/role';
+import area from '@/config/Area'
+import roles from '@/config/role'
 import { weekType, talentMaterial } from '@/config/roleTalent'
 import { weekData } from '@/config/common'
 
@@ -83,7 +83,6 @@ const changeWeek = (id) => {
 getWeek()
 getCurrentRoleList()
 
-
 const { activeIndex, currentRoleList } = toRefs(state)
 
 onMounted(() => {
@@ -95,20 +94,19 @@ onMounted(() => {
   }
 
   roles
-  .filter((item) => item.header)
-  .forEach(item => {
-    if (!(headerObj && Object.prototype.hasOwnProperty.call(headerObj, item.id))) {
-      let p = drawImage(item.header)
-        .then((url) => {
-          headerObj[item.id] = url
-          localStorage.setItem('headerObj', JSON.stringify(headerObj))
-          indexDB.add('DB', 'headerStore', {headerId: item.id, headerURL: url})
-
-        })
-        .catch((err) => {
-          console.log(err)
-        })
-        }
+    .filter((item) => item.header)
+    .forEach((item) => {
+      if (!(headerObj && Object.prototype.hasOwnProperty.call(headerObj, item.id))) {
+        let p = drawImage(item.header)
+          .then((url) => {
+            headerObj[item.id] = url
+            localStorage.setItem('headerObj', JSON.stringify(headerObj))
+            indexDB.add('DB', 'headerStore', { headerId: item.id, headerURL: url })
+          })
+          .catch((err) => {
+            console.log(err)
+          })
+      }
     })
 })
 </script>

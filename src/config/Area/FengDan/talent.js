@@ -4,7 +4,7 @@
  * @LastEditors: tanshaobo
  * @LastEditTime: 2025-04-28 15:17:16
  * @Description: 枫丹-天赋
- * @FilePath: \yuanshen-utils\src\config\FengDan\talent.js
+ * @FilePath: \yuanshen-utils\src\config\Area\FengDan\talent.js
  */
 
 import { FengDan } from './index'

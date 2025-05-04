@@ -4,7 +4,7 @@
  * @LastEditors: tanshaobo
  * @LastEditTime: 2025-04-28 15:18:32
  * @Description: 
- * @FilePath: \yuanshen-utils\src\config\NaTa\talent.js
+ * @FilePath: \yuanshen-utils\src\config\Area\NaTa\talent.js
  */
 
 import { NaTa } from './index'

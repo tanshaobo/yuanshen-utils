@@ -4,7 +4,7 @@
  * @LastEditors: tanshaobo
  * @LastEditTime: 2025-04-28 03:40:52
  * @Description: 璃月-天赋
- * @FilePath: \yuanshen-utils\src\config\LiYue\talent.js
+ * @FilePath: \yuanshen-utils\src\config\Area\LiYue\talent.js
  */
 
 import { LiYue } from './index'
