@@ -69,8 +69,6 @@ const enterDetail = (item) => {
 
 const Init = () => {
   state.dataList = deepCopyObject(data).map((i) => {
-    i.stable = i.stable ? '是' : '否'
-    i.linear = i.linear ? '是' : '否'
     i.remain = false
     return i
   })
