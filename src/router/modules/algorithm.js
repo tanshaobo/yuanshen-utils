@@ -2,7 +2,7 @@
  * @Author: tanshaobo
  * @Date: 2022-02-09 13:13:51
  * @LastEditors: tanshaobo
- * @LastEditTime: 2023-03-31 16:46:44
+ * @LastEditTime: 2025-06-04 01:59:33
  * @Description: 算法
  * @FilePath: \yuanshen-utils\src\router\modules\algorithm.js
  */
@@ -10,7 +10,7 @@ import Home from '@/views/Index.vue'
 
 const algorithm = {
   path: '/algorithm',
-  label: '天赋材料',
+  label: '基础算法',
   name: 'Algorithm',
   component: Home,
   menu: true,
@@ -21,7 +21,7 @@ const algorithm = {
   children: [
     {
       path: '/algorithm',
-      label: '天赋材料',
+      label: '基础算法',
       name: 'AlgorithmList',
       menu: false,
       meta: {
@@ -30,7 +30,7 @@ const algorithm = {
           {
             path: '/algorithm',
             name: 'AlgorithmList',
-            label: '天赋材料'
+            label: '基础算法'
           }
         ]
       },
@@ -47,7 +47,7 @@ const algorithm = {
           {
             path: '/algorithm',
             name: 'AlgorithmList',
-            label: '天赋材料'
+            label: '基础算法'
           },
           {
             path: '/AlgorithmDetail',
