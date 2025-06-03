@@ -2,8 +2,8 @@
  * @Author: tanshaobo
  * @Date: 2022-02-09 13:13:51
  * @LastEditors: tanshaobo
- * @LastEditTime: 2025-06-04 01:59:33
- * @Description: 算法
+ * @LastEditTime: 2025-06-04 02:33:27
+ * @Description: 基础算法
  * @FilePath: \yuanshen-utils\src\router\modules\algorithm.js
  */
 import Home from '@/views/Index.vue'
