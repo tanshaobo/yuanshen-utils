@@ -2,7 +2,7 @@
   <el-row :gutter="20">
     <el-col :span="3" v-for="item in weekData" :key="item.id">
       <div
-        class="grid-content"
+        class="col-content"
         :class="item.id === activeIndex ? 'active' : ''"
         @click="changeWeek(item.id)"
       >
@@ -112,23 +112,25 @@ onMounted(() => {
 </script>
 
 <style lang="stylus" scoped>
-:deep(.grid-content)
-  display flex
-  align-items center
-  justify-content center
-  border-radius 4px
-  min-height 36px
-  line-height 36px
-  border 1px solid rgba(255,166,49, .8)
-  cursor pointer
-  background rgba(255,166,49, 0)
-  transition all .3s
-  &:hover
-    background rgba(255,166,49, .5)
-    color #ffffff
-  &.active
-    background rgba(255,166,49, .8)
-    color #ffffff
+.el-row
+  padding-bottom 20px
+  :deep(.col-content)
+    display flex
+    align-items center
+    justify-content center
+    border-radius 4px
+    min-height 36px
+    line-height 36px
+    border 1px solid rgba(255,166,49, .8)
+    cursor pointer
+    background rgba(255,166,49, 0)
+    transition all .3s
+    &:hover
+      background rgba(255,166,49, .5)
+      color #ffffff
+    &.active
+      background rgba(255,166,49, .8)
+      color #ffffff
 .grid
   :deep(.el-card__body)
     display flex
