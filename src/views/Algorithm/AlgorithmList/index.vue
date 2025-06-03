@@ -137,3 +137,7 @@ const search = () => {
 
 const { dataList, formData } = toRefs(state)
 </script>
+<style lang="stylus" scoped>
+.el-select
+  width 170px
+</style>
