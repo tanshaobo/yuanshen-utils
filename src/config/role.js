@@ -2,7 +2,7 @@
  * @Author: tanshaobo
  * @Date: 2022-08-19 22:45:05
  * @LastEditors: tanshaobo
- * @LastEditTime: 2025-06-28 16:23:35
+ * @LastEditTime: 2025-06-30 21:28:40
  * @Description: 角色配置
  * @FilePath: \yuanshen-utils\src\config\role.js
  */
@@ -328,9 +328,9 @@ export const roleList = [
   },
   {
     id: '0054',
-    Name: '提那里',
+    Name: '提纳里',
     Talent: 10,
-    header: 'header/提那里.png'
+    header: 'header/提纳里.png'
   },
   {
     id: '0055',
