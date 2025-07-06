@@ -2,14 +2,14 @@
  * @Author: tanshaobo
  * @Date: 2025-05-02 00:50:05
  * @LastEditors: tanshaobo
- * @LastEditTime: 2025-06-20 17:11:43
+ * @LastEditTime: 2025-07-01 21:47:16
  * @Description: 稻妻-圣遗物
  * @FilePath: \yuanshen-utils\src\config\Area\DaoQi\relics.js
  */
 
 import { DaoQi } from './index'
 
-let arr = [
+let relicses = [
   {
       "title": "长夜之誓",
       "filter": [
@@ -425,7 +425,6 @@ let arr = [
   {
       "title": "染血的骑士道",
       "filter": [
-          
           "套装效果/伤害加成"
       ],
       "list1": {
