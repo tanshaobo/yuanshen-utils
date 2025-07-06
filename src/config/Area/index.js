@@ -2,7 +2,7 @@
  * @Author: tanshaobo
  * @Date: 2022-08-18 02:34:47
  * @LastEditors: tanshaobo
- * @LastEditTime: 2025-05-04 23:41:34
+ * @LastEditTime: 2025-07-07 02:14:59
  * @Description: file content
  * @FilePath: \yuanshen-utils\src\config\Area\index.js
  */
@@ -30,5 +30,4 @@ export const areas = [
   ShenYuan
 ]
 
-console.log(areas)
 export default areas
