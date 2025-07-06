@@ -6,3 +6,5 @@
  * @Description: 元素-冰
  * @FilePath: \yuanshen-utils\src\config\Elemental\Cryo\index.js
  */
+
+export { roleList as CryoRoleList } from './role'

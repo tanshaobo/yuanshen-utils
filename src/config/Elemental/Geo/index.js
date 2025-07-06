@@ -6,3 +6,5 @@
  * @Description: 元素-岩
  * @FilePath: \yuanshen-utils\src\config\Elemental\Geo\index.js
  */
+
+export { roleList as GeoRoleList } from './role'
