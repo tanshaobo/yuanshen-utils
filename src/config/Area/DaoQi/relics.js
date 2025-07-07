@@ -2,7 +2,7 @@
  * @Author: tanshaobo
  * @Date: 2025-05-02 00:50:05
  * @LastEditors: tanshaobo
- * @LastEditTime: 2025-07-01 21:47:16
+ * @LastEditTime: 2025-07-08 02:55:01
  * @Description: 稻妻-圣遗物
  * @FilePath: \yuanshen-utils\src\config\Area\DaoQi\relics.js
  */
@@ -598,17 +598,36 @@ let relicses = [
   }
 ]
 
+const instance = [
+    {
+      id: 1,
+      label: '椛染之庭'
+    },
+    {
+      id: 2,
+      label: '沉眠之庭',
+    }
+  ]
+
 export const relics = [
-  {
-    instanceId: 1,
-    instanceLabel: '椛染之庭',
-    id: 1,
-    label: '追忆之注连'
-  },
-  {
-    instanceId: 1,
-    instanceLabel: '椛染之庭',
-    id: 2,
-    label: '追忆之注连'
-  },
+    {
+        instanceId: 1,
+        id: 1,
+        label: '绝缘之旗印'
+      },
+      {
+        instanceId: 1,
+        id: 2,
+        label: '追忆之注连'
+      },
+      {
+        instanceId: 2,
+        id: 3,
+        label: '华馆梦醒形骸记'
+      },
+      {
+        instanceId: 2,
+        id: 4,
+        label: '海染砗磲'
+      },
 ]
