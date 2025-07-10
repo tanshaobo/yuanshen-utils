@@ -2,13 +2,14 @@
  * @Author: tanshaobo
  * @Date: 2025-04-28 03:15:43
  * @LastEditors: tanshaobo
- * @LastEditTime: 2025-04-28 03:37:11
+ * @LastEditTime: 2025-07-11 01:52:09
  * @Description: 蒙德-天赋
  * @FilePath: \yuanshen-utils\src\config\Area\MengDe\talent.js
  */
 import { MengDe } from './index'
+import { createId } from '@/utils/Area/talent'
 
-export const talent = [
+const talentList = [
   {
     label: '自由',
     weekType: 1
@@ -21,8 +22,5 @@ export const talent = [
     label: '诗文',
     weekType: 3
   },
-].map((i, j) => ({
-  ...i,
-  id: (Number(MengDe.AreaId) - 1) * 3 + j + 1,
-  areaId: MengDe.AreaId
-}))
+]
+export const talent = createId(MengDe.AreaId, talentList)

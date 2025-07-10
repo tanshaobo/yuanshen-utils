@@ -2,14 +2,15 @@
  * @Author: tanshaobo
  * @Date: 2025-04-28 03:39:09
  * @LastEditors: tanshaobo
- * @LastEditTime: 2025-04-28 03:40:52
+ * @LastEditTime: 2025-07-11 01:51:48
  * @Description: 璃月-天赋
  * @FilePath: \yuanshen-utils\src\config\Area\LiYue\talent.js
  */
 
 import { LiYue } from './index'
+import { createId } from '@/utils/Area/talent'
 
-export const talent = [
+const talentList = [
   {
     label: '繁荣',
     weekType: 1
@@ -22,8 +23,6 @@ export const talent = [
     label: '黄金',
     weekType: 3
   }
-].map((i, j) => ({
-  ...i,
-  id: (Number(LiYue.AreaId) - 1) * 3 + j + 1,
-  areaId: LiYue.AreaId
-}))
+]
+export const talent = createId(LiYue.AreaId, talentList)
+  

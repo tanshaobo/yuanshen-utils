@@ -2,14 +2,15 @@
  * @Author: tanshaobo
  * @Date: 2025-04-28 15:07:09
  * @LastEditors: tanshaobo
- * @LastEditTime: 2025-04-28 15:18:32
+ * @LastEditTime: 2025-07-11 01:52:33
  * @Description: 
  * @FilePath: \yuanshen-utils\src\config\Area\NaTa\talent.js
  */
 
 import { NaTa } from './index'
+import { createId } from '@/utils/Area/talent'
 
-export const talent = [
+const talentList = [
   {
     label: '角逐',
     weekType: 1
@@ -22,8 +23,5 @@ export const talent = [
     label: '纷争',
     weekType: 3
   }
-].map((i, j) => ({
-  ...i,
-  id: (Number(NaTa.AreaId) - 1) * 3 + j + 1,
-  areaId: NaTa.AreaId
-}))
+]
+export const talent = createId(NaTa.AreaId, talentList)

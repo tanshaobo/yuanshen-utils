@@ -2,14 +2,15 @@
  * @Author: tanshaobo
  * @Date: 2025-04-28 15:05:56
  * @LastEditors: tanshaobo
- * @LastEditTime: 2025-04-28 15:17:16
+ * @LastEditTime: 2025-07-11 01:51:00
  * @Description: 枫丹-天赋
  * @FilePath: \yuanshen-utils\src\config\Area\FengDan\talent.js
  */
 
 import { FengDan } from './index'
+import { createId } from '@/utils/Area/talent'
 
-export const talent = [
+const talentList = [
   {
     label: '公平',
     weekType: 1
@@ -22,8 +23,6 @@ export const talent = [
     label: '秩序',
     weekType: 3
   }
-].map((i, j) => ({
-  ...i,
-  id: (Number(FengDan.AreaId) - 1) * 3 + j + 1,
-  areaId: FengDan.AreaId
-}))
+]
+
+export const talent = createId(FengDan.AreaId, talentList)
