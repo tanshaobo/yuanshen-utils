@@ -6,4 +6,6 @@
  * @Description: 须弥
  * @FilePath: \yuanshen-utils\src\config\Area\XuMi\index.js
  */
-export const XuMi = {AreaId: 4,AreaName: '须弥'}
+const XuMi = {AreaId: 4,AreaName: '须弥'}
+
+export default XuMi

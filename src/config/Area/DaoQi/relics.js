@@ -7,7 +7,7 @@
  * @FilePath: \yuanshen-utils\src\config\Area\DaoQi\relics.js
  */
 
-import { DaoQi } from './index'
+import Area from './index'
 
 let relicses = [
   {

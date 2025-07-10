@@ -7,7 +7,7 @@
  * @FilePath: \yuanshen-utils\src\config\Area\XuMi\talent.js
  */
 
-import { XuMi } from './index'
+import Area from './index'
 import { createId } from '@/utils/Area/talent'
 
 const talentList = [
@@ -24,4 +24,4 @@ const talentList = [
     weekType: 3
   }
 ]
-export const talent = createId(XuMi.AreaId, talentList)
+export const talent = createId(Area.AreaId, talentList)

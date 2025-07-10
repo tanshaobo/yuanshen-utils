@@ -7,4 +7,6 @@
  * @FilePath: \yuanshen-utils\src\config\Area\MengDe\index.js
  */
 
-export const MengDe = {AreaId: 1, AreaName: '蒙德'}
+const MengDe = {AreaId: 1, AreaName: '蒙德'}
+
+export default MengDe

@@ -7,4 +7,6 @@
  * @FilePath: \yuanshen-utils\src\config\Area\ZhiDong\index.js
  */
 
-export const ZhiDong = {AreaId: 7,AreaName: '至冬'}
+const ZhiDong = {AreaId: 7,AreaName: '至冬'}
+
+export default ZhiDong

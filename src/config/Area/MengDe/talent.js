@@ -6,7 +6,7 @@
  * @Description: 蒙德-天赋
  * @FilePath: \yuanshen-utils\src\config\Area\MengDe\talent.js
  */
-import { MengDe } from './index'
+import Area from './index'
 import { createId } from '@/utils/Area/talent'
 
 const talentList = [
@@ -23,4 +23,4 @@ const talentList = [
     weekType: 3
   },
 ]
-export const talent = createId(MengDe.AreaId, talentList)
+export const talent = createId(Area.AreaId, talentList)

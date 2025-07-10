@@ -7,4 +7,6 @@
  * @FilePath: \yuanshen-utils\src\config\Area\FengDan\index.js
  */
 
-export const FengDan = {AreaId: 5,AreaName: '枫丹'}
+const FengDan = {AreaId: 5,AreaName: '枫丹'}
+
+export default FengDan

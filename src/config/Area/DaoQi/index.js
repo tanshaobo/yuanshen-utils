@@ -6,4 +6,6 @@
  * @Description: 稻妻
  * @FilePath: \yuanshen-utils\src\config\Area\DaoQi\index.js
  */
-export const DaoQi = {AreaId: 3,AreaName: '稻妻'}
+const DaoQi = {AreaId: 3,AreaName: '稻妻'}
+
+export default DaoQi

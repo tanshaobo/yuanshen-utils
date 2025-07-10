@@ -2,11 +2,11 @@
  * @Author: tanshaobo
  * @Date: 2025-04-28 03:22:12
  * @LastEditors: tanshaobo
- * @LastEditTime: 2025-07-11 01:53:20
+ * @LastEditTime: 2025-07-11 02:09:32
  * @Description: 稻妻-天赋
  * @FilePath: \yuanshen-utils\src\config\Area\DaoQi\talent.js
  */
-import { DaoQi } from './index'
+import Area from './index'
 import { createId } from '@/utils/Area/talent'
 
 const talentList = [
@@ -24,4 +24,4 @@ const talentList = [
   }
 ]
 
-export const talent = createId(DaoQi.AreaId, talentList)
+export const talent = createId(Area.AreaId, talentList)

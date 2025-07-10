@@ -7,5 +7,6 @@
  * @FilePath: \yuanshen-utils\src\config\Area\KaiRuiYa\index.js
  */
 
-export const KaiRuiYa = {AreaId: 8,AreaName: '凯瑞亚'}
+const KaiRuiYa = {AreaId: 8,AreaName: '凯瑞亚'}
 
+export default KaiRuiYa

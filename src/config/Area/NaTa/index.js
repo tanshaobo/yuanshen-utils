@@ -7,4 +7,6 @@
  * @FilePath: \yuanshen-utils\src\config\Area\NaTa\index.js
  */
 
-export const NaTa = {AreaId: 6,AreaName: '纳塔'}
+const NaTa = {AreaId: 6,AreaName: '纳塔'}
+
+export default NaTa

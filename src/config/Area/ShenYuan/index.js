@@ -7,4 +7,6 @@
  * @FilePath: \yuanshen-utils\src\config\Area\ShenYuan\index.js
  */
 
-export const ShenYuan = {AreaId: 10, AreaName: '深渊'}
+const ShenYuan = {AreaId: 10, AreaName: '深渊'}
+
+export default ShenYuan
