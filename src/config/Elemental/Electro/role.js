@@ -2,7 +2,7 @@
  * @Author: tanshaobo
  * @Date: 2025-07-06 22:35:06
  * @LastEditors: tanshaobo
- * @LastEditTime: 2025-07-07 02:09:44
+ * @LastEditTime: 2026-01-09 01:52:22
  * @Description: 元素-雷-角色
  * @FilePath: \yuanshen-utils\src\config\Elemental\Electro\role.js
  */
@@ -36,7 +36,19 @@ export const roleList = [
     id: '0021',
     Name: '刻晴',
     Talent: 4,
-    header: 'header/刻晴.png'
+    header: 'header/刻晴.png',
+    relics: {
+      
+    },
+    stats: {
+      relics: ['1-1-1'], // 套装
+      usual: [8, 7, 1], // 通用
+      flower: [6, 8, 7, 1, 9],
+      plume: [4, 8, 7, 1, 9],
+      sands: [1, 8, 7, 9],
+      goblet: [11, 8, 7, 1, 9],
+      circlet: [7, 8, 1, 9]
+    }
   },
   {
     id: '0040',
@@ -86,12 +98,7 @@ export const roleList = [
     Talent: 14,
     header: 'header/克洛琳德.png'
   },
-  {
-    id: '0088',
-    Name: '玛拉妮',
-    Talent: 16,
-    header: 'header/玛拉妮.png'
-  },
+  
   {
     id: '0091',
     Name: '欧洛伦',

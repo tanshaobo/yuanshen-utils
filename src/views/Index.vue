@@ -36,6 +36,10 @@ const source = [
 const state = reactive({
   source
 })
+
+let num = 0,
+  num1 = 0,
+  num2 = 0
 const Totree = (data, root = 0) => {
   let arr = []
   data.forEach((item) => {
@@ -53,6 +57,7 @@ console.log(Totree(source), 'Totree')
 
 const Totree1 = (data) => {
   let arr = []
+  num1++
   const map = {}
   data.forEach((item) => {
     let newItem = (map[item.Id] = {

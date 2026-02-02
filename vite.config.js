@@ -2,17 +2,19 @@
  * @Author: tanshaobo
  * @Date: 2022-11-18 10:00:38
  * @LastEditors: tanshaobo
- * @LastEditTime: 2023-03-04 16:04:52
+ * @LastEditTime: 2025-12-30 14:33:00
  * @Description: file content
  * @FilePath: \yuanshen-utils\vite.config.js
  */
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import path from 'path'
+import fs from 'vite-plugin-fs' 
+
 // 设置别名
 const resolve = {
   alias: [
-    { find: '@', replacement: `${path.resolve(__dirname, './src')}` }
+    { find: '@', replacement: `${path.resolve(__dirname, './src')}` },
   ]
 }
 // 设置开发服务
@@ -58,6 +60,7 @@ const build ={
   //   }
   // }
 }
+
 // https://vitejs.dev/config/
 export default defineConfig({
   base:'./',
@@ -65,5 +68,8 @@ export default defineConfig({
   server,
   css,
   build,
-  plugins: [vue()]
+  plugins: [
+    vue(),
+    fs()
+  ]
 })

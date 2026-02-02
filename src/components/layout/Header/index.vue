@@ -29,6 +29,7 @@ const router = useRouter()
 
 const breadcrumbList = computed(() => {
   const { meta, params } = route
+
   let tempArr = []
   if (meta && meta.crumb) {
     tempArr = [...meta.crumb]

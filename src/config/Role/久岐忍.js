@@ -1,0 +1,2 @@
+const role = {"id":"0051","name":"久岐忍","elemental":"Electro","talent":8,"header":"header/久岐忍.png","relics":["4-1-2","4-2-3"],"flower":{"main":6,"deputy":[7,8,3,9]},"plume":{"main":4,"deputy":[7,8,3,9]},"sands":{"main":9,"deputy":[7,8,10,3]},"goblet":{"main":9,"deputy":[7,8,10,3]},"circlet":{"main":9,"deputy":[7,10,8,3]}}
+export default role

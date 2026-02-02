@@ -2,7 +2,7 @@
  * @Author: tanshaobo
  * @Date: 2022-02-09 13:13:51
  * @LastEditors: tanshaobo
- * @LastEditTime: 2025-06-04 02:33:27
+ * @LastEditTime: 2026-01-02 00:07:55
  * @Description: 基础算法
  * @FilePath: \yuanshen-utils\src\router\modules\algorithm.js
  */
@@ -50,7 +50,7 @@ const algorithm = {
             label: '基础算法'
           },
           {
-            path: '/AlgorithmDetail',
+            path: '/algorithmDetail',
             name: 'AlgorithmDetail',
             label: '详情'
           }

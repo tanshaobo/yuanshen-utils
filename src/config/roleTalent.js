@@ -2,7 +2,7 @@
  * @Author: tanshaobo
  * @Date: 2022-08-18 02:30:08
  * @LastEditors: tanshaobo
- * @LastEditTime: 2025-05-04 23:52:19
+ * @LastEditTime: 2026-01-26 00:20:47
  * @Description: 角色天赋
  * @FilePath: \yuanshen-utils\src\config\roleTalent.js
  */
@@ -17,6 +17,7 @@ import { talent as DaoQiTalent } from '@/config/Area/DaoQi/talent'
 import { talent as XuMiTalent } from '@/config/Area/XuMi/talent'
 import { talent as FengDanTalent } from '@/config/Area/FengDan/talent'
 import { talent as NaTaTalent } from '@/config/Area/NaTa/talent'
+import { talent as NuoDeKaLaiTalent } from '@/config/Area/NuoDeKaLai/talent'
 
 export const talentMaterial = [
   ...MengDeTalent,
@@ -24,6 +25,7 @@ export const talentMaterial = [
   ...DaoQiTalent,
   ...XuMiTalent,
   ...FengDanTalent,
-  ...NaTaTalent
+  ...NaTaTalent,
+  ...NuoDeKaLaiTalent
 ]
 export default talentMaterial

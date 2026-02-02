@@ -17,7 +17,7 @@
     <template #default="slotProps">
       <div v-for="i in slotProps.item.role" :key="i.id" class="role-card">
         <img :src="i.headerURL ? i.headerURL : i.header" />
-        <span>{{ i.Name }}</span>
+        <span>{{ i.name }}</span>
       </div>
     </template>
   </Grid>
@@ -28,18 +28,30 @@ import { ref, toRefs, reactive, onMounted } from 'vue'
 import Grid from '@/components/layout/Grid/index.vue'
 
 import area from '@/config/Area'
-import roles from '@/config/role'
 import { weekType, talentMaterial } from '@/config/roleTalent'
 import { weekData } from '@/config/common'
 
 import deepCopyObject from '@/utils/deepCopyObject'
 import drawImage from '@/utils/drawImage'
 import indexDB from '@/utils/indexDB'
+import { An, Cn } from '@/utils/permutation'
+import roleList from '@/config/Role/index'
 
 const state = reactive({
   activeIndex: 0,
   currentRoleList: []
 })
+// 生成初始角色表
+const initRoleList = () => {
+  return roleList.map((i) => ({
+    name: i.name,
+    talent: i.talent,
+    elemental: i.elemental,
+    header: i.header,
+    id: i.id
+  }))
+}
+initRoleList()
 // 获取当前是周几
 const getWeek = () => {
   state.activeIndex = new Date().getDay()
@@ -63,15 +75,14 @@ const getCurrentRoleList = () => {
   headerObj = headerObj ? JSON.parse(headerObj) : {}
   state.currentRoleList = currentTalent.map((item) => {
     item.areaName = area.find((i) => i.AreaId == item.areaId).AreaName
-    item.role = roles
-      .filter((i) => i.Talent == item.id || Array.isArray(i.Talent))
+    item.role = initRoleList()
+      .filter((i) => i.talent == item.id || Array.isArray(i.talent))
       .map((item) => {
         if (headerObj && headerObj[item.id]) {
           item.headerURL = headerObj[item.id]
         }
         return item
       })
-
     return item
   })
 }
@@ -93,7 +104,7 @@ onMounted(() => {
     headerObj = {}
   }
 
-  roles
+  initRoleList()
     .filter((item) => item.header)
     .forEach((item) => {
       if (!(headerObj && Object.prototype.hasOwnProperty.call(headerObj, item.id))) {
@@ -147,6 +158,7 @@ onMounted(() => {
       border-radius 0px
       transition all .3s
       overflow hidden
+      border-radius 4px
       img
         width 100%
         background-image linear-gradient(135deg, rgb(0,0,0) -60.4%, rgb(255,255,255) 145.2%)

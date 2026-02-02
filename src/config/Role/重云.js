@@ -1,0 +1,2 @@
+const role = {"id":"0015","name":"重云","elemental":"Cryo","talent":5,"header":"header/重云.png","relics":["1-3-6","2-3-6"],"flower":{"main":6,"deputy":[1,7,8,10]},"plume":{"main":4,"deputy":[1,7,8,10]},"sands":{"main":1,"deputy":[7,8,10]},"goblet":{"main":11,"deputy":[1,7,8,10]},"circlet":{"main":7,"deputy":[1,10,8]}}
+export default role

@@ -7,6 +7,6 @@
  * @FilePath: \yuanshen-utils\src\config\Area\TianKongDao\index.js
  */
 
-const TianKongDao = {AreaId: 9,AreaName: '天空岛'}
+const TianKongDao = {AreaId: 19,AreaName: '天空岛'}
 
 export default TianKongDao

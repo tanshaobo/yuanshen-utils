@@ -2,12 +2,14 @@
  * @Author: tanshaobo
  * @Date: 2025-05-02 00:50:05
  * @LastEditors: tanshaobo
- * @LastEditTime: 2025-07-08 02:55:01
+ * @LastEditTime: 2025-07-26 01:54:47
  * @Description: 稻妻-圣遗物
  * @FilePath: \yuanshen-utils\src\config\Area\DaoQi\relics.js
  */
 
 import Area from './index'
+import { addInstanceId, addRelicsId } from '@/utils/Area/relics'
+import { Totree } from '@/utils/toTree'
 
 let relicses = [
   {
@@ -598,36 +600,35 @@ let relicses = [
   }
 ]
 
-const instance = [
+const instanceList = [
     {
-      id: 1,
       label: '椛染之庭'
     },
     {
-      id: 2,
       label: '沉眠之庭',
     }
   ]
+const instance =addInstanceId(Area.AreaId,instanceList)
 
-export const relics = [
+const relicsList= [
     {
-        instanceId: 1,
-        id: 1,
-        label: '绝缘之旗印'
-      },
-      {
-        instanceId: 1,
-        id: 2,
-        label: '追忆之注连'
-      },
-      {
-        instanceId: 2,
-        id: 3,
-        label: '华馆梦醒形骸记'
-      },
-      {
-        instanceId: 2,
-        id: 4,
-        label: '海染砗磲'
-      },
+    instanceId: instance[0].id,
+    label: '绝缘之旗印'
+    },
+    {
+    instanceId: instance[0].id,
+    label: '追忆之注连'
+    },
+    {
+    instanceId: instance[1].id,
+    label: '华馆梦醒形骸记'
+    },
+    {
+    instanceId: instance[1].id,
+    label: '海染砗磲'
+    },
 ]
+
+export const relics = addRelicsId(relicsList)
+
+export const instanceData = Totree([...instance, ...relics], Area.AreaId, 'id', 'instanceId')

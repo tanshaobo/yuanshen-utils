@@ -2,7 +2,7 @@
  * @Author: tanshaobo
  * @Date: 2022-08-19 22:45:05
  * @LastEditors: tanshaobo
- * @LastEditTime: 2025-07-07 01:59:28
+ * @LastEditTime: 2026-01-08 01:12:59
  * @Description: 角色配置
  * @FilePath: \yuanshen-utils\src\config\role.js
  */
@@ -644,5 +644,4 @@ export const roleList = [
 //     header: 'header/伊涅芙.png'
 //   }
 // ]
-
 export default roleList

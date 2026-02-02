@@ -2,7 +2,7 @@
  * @Author: tanshaobo
  * @Date: 2025-07-01 21:36:58
  * @LastEditors: tanshaobo
- * @LastEditTime: 2025-07-02 02:10:45
+ * @LastEditTime: 2026-01-26 00:25:25
  * @Description: 圣遗物
  * @FilePath: \yuanshen-utils\src\config\relics.js
  */
@@ -525,3 +525,70 @@ const relics = [
   
   
 ]
+
+import { relics as MengDeRelicsList, instanceData as MengDeInstance } from './Area/MengDe/relics'
+import { relics as LiYueRelicsList, instanceData as LiYueReInstance } from './Area/LiYue/relics'
+import { relics as DaoQiRelicsList,instanceData as DaoQiReInstance } from './Area/DaoQi/relics'
+import { relics as XuMiRelicsList, instanceData as XuMiReInstance } from './Area/XuMi/relics'
+import { relics as FengDanRelicsList, instanceData as FengDanInstance } from './Area/FengDan/relics'
+import { relics as NaTaRelicsList,instanceData as NaTaReInstance } from './Area/NaTa/relics'
+import { relics as NuoDeKaLaiRelicsList,instanceData as NuoDeKaLaiReInstance } from './Area/NuoDeKaLai/relics'
+
+
+const commonRelics = [
+    {
+        id: "0-1-1",
+        instanceId:"0-1",
+        label:"角斗士的终幕礼"
+    },
+    {
+        id: "0-1-2",
+        instanceId:"0-1",
+        label:"流浪大地的乐团"
+    }
+]
+
+export const relicsList = [
+    ...commonRelics,
+  ...MengDeRelicsList,
+  ...LiYueRelicsList,
+  ...DaoQiRelicsList,
+  ...XuMiRelicsList,
+  ...FengDanRelicsList,
+  ...NaTaRelicsList,
+  ...NuoDeKaLaiRelicsList
+]
+
+export const Instance = [
+    ...MengDeInstance,
+    ...LiYueReInstance,
+    ...DaoQiReInstance,
+    ...XuMiReInstance,
+    ...FengDanInstance,
+    ...NaTaReInstance,
+    ...NuoDeKaLaiReInstance
+]
+
+export const partsList = [
+    {
+        id: 'flower',
+        label: '生之花',
+    },
+    {
+        id: 'plume',
+        label: '死之羽',
+    },
+    {
+        id: 'sands',
+        label: '时之沙',
+    },
+    {
+        id: 'goblet',
+        label: '空之杯',
+    },
+    {
+        id: 'circlet',
+        label: '理之冠',
+    }
+  ]
+

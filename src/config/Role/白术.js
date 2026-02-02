@@ -1,0 +1,2 @@
+const role = {"id":"0068","name":"白术","elemental":"Dendro","talent":6,"header":"header/白术.png","relics":["4-1-1"],"flower":{"main":6,"deputy":[10,6,3]},"plume":{"main":4,"deputy":[10,3,6]},"sands":{"main":3,"deputy":[10,6]},"goblet":{"main":3,"deputy":[10,6]},"circlet":{"main":3,"deputy":[10,6]}}
+export default role

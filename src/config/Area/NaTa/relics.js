@@ -6,37 +6,41 @@
  * @Description: 纳塔-圣遗物
  * @FilePath: \yuanshen-utils\src\config\Area\NaTa\relics.js
  */
+import Area from './index'
+import { addInstanceId, addRelicsId } from '@/utils/Area/relics'
+import { Totree } from '@/utils/toTree'
 
-const instance = [
+const instanceList = [
   {
-    id: 1,
     label: '虹灵的净土'
   },
   {
-    id: 2,
     label: '荒废砌造坞',
   }
 ]
 
-export const relics = [
+const instance =addInstanceId(Area.AreaId,instanceList)
+
+const relicsList = [
   {
-    instanceId: 1,
-    id: 1,
-    label: '黑耀秘典'
+    instanceId: instance[0].id,
+    label: '黑曜秘典'
   },
   {
-    instanceId: 1,
-    id: 2,
+    instanceId: instance[0].id,
     label: '烬城勇者绘卷'
   },
   {
-    instanceId: 2,
-    id: 3,
+    instanceId: instance[1].id,
     label: '长夜之誓'
   },
   {
-    instanceId: 2,
-    id: 4,
+    instanceId: instance[1].id,
     label: '深廊终曲'
   }
 ]
+
+
+export const relics = addRelicsId(relicsList)
+
+export const instanceData = Totree([...instance, ...relics], Area.AreaId, 'id', 'instanceId')

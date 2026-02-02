@@ -2,69 +2,67 @@
  * @Author: tanshaobo
  * @Date: 2025-07-08 02:05:27
  * @LastEditors: tanshaobo
- * @LastEditTime: 2025-07-08 02:54:48
+ * @LastEditTime: 2025-07-26 01:59:04
  * @Description: 蒙德-圣遗物
  * @FilePath: \yuanshen-utils\src\config\Area\MengDe\relics.js
  */
-const instance = [
+import Area from './index'
+import { addInstanceId, addRelicsId } from '@/utils/Area/relics'
+import { Totree } from '@/utils/toTree'
+
+const instanceList = [
   {
-    id: 1,
     label: '仲夏庭园'
   },
   {
-    id: 2,
     label: '铭记之谷',
   },
   {
-    id: 3,
     label: '芬德尼尔之顶',
   },
   {
-    id: 4,
     label: '山脊守望',
   }
   
 ]
 
-export const relics = [
+const instance =addInstanceId(Area.AreaId,instanceList)
+
+const relicsList = [
   {
-    instanceId: 1,
-    id: 1,
+    instanceId: instance[0].id,
     label: '如雷的盛怒'
   },
   {
-    instanceId: 1,
-    id: 2,
+    instanceId: instance[0].id,
     label: '平息鸣雷的尊者'
   },
   {
-    instanceId: 2,
-    id: 3,
+    instanceId: instance[1].id,
     label: '翠绿之影'
   },
   {
-    instanceId: 2,
-    id: 4,
+    instanceId: instance[1].id,
     label: '被怜爱的少女'
   },
   {
-    instanceId: 3,
-    id: 5,
+    instanceId: instance[2].id,
     label: '沉沦之心'
   },
   {
-    instanceId: 3,
-    id: 6,
+    instanceId: instance[2].id,
     label: '冰风迷途的勇士'
   },
   {
-    instanceId: 4,
-    id: 7,
+    instanceId: instance[3].id,
     label: '千岩牢固'
   },
   {
-    instanceId: 4,
-    id: 8,
+    instanceId: instance[3].id,
     label: '苍白之火'
   },
 ]
+
+export const relics = addRelicsId(relicsList)
+
+export const instanceData = Totree([...instance, ...relics], Area.AreaId, 'id', 'instanceId')

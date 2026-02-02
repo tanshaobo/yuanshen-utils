@@ -1,0 +1,2 @@
+const role = {"id":"0042","name":"珊瑚宫心海","elemental":"Hydro","talent":7,"header":"header/珊瑚宫心海.png","relics":["3-2-4"],"flower":{"main":6,"deputy":[3,9,10]},"plume":{"main":4,"deputy":[10,3,6,9]},"sands":{"main":3,"deputy":[10,6,9]},"goblet":{"main":3,"deputy":[10,6,9]},"circlet":{"main":12,"deputy":[3,6,9,10]}}
+export default role

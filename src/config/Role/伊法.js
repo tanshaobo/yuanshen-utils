@@ -1,0 +1,2 @@
+const role = {"id":"0099","name":"伊法","elemental":"Anemo","talent":18,"header":"header/伊法.png","relics":["1-2-3","6-1-1"],"flower":{"main":6,"deputy":[1,7,8,10]},"plume":{"main":4,"deputy":[1,7,8,10]},"sands":{"main":9,"deputy":[7,8,10]},"goblet":{"main":9,"deputy":[7,8,10]},"circlet":{"main":9,"deputy":[7,10,8]}}
+export default role

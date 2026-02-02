@@ -80,6 +80,12 @@ export const roleList = [
     header: 'header/希格雯.png'
   },
   {
+    id: '0088',
+    Name: '玛拉妮',
+    Talent: 16,
+    header: 'header/玛拉妮.png'
+  },
+  {
     id: '0101',
     Name: '塔利雅',
     Talent: 3,

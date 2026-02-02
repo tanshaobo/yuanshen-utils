@@ -7,7 +7,7 @@
  * @FilePath: \yuanshen-utils\src\config\Area\DaoQi\talent.js
  */
 import Area from './index'
-import { createId } from '@/utils/Area/talent'
+import { createTalentId } from '@/utils/Area/talent'
 
 const talentList = [
   {
@@ -24,4 +24,4 @@ const talentList = [
   }
 ]
 
-export const talent = createId(Area.AreaId, talentList)
+export const talent = createTalentId(Area.AreaId, talentList)

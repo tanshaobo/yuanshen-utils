@@ -2,55 +2,55 @@
  * @Author: tanshaobo
  * @Date: 2025-07-08 02:47:07
  * @LastEditors: tanshaobo
- * @LastEditTime: 2025-07-08 02:50:34
+ * @LastEditTime: 2025-08-21 01:36:03
  * @Description: 须弥-圣遗物
  * @FilePath: \yuanshen-utils\src\config\Area\XuMi\relics.js
  */
+import Area from './index'
+import { addInstanceId, addRelicsId } from '@/utils/Area/relics'
+import { Totree } from '@/utils/toTree'
 
-const instance = [
+const instanceList = [
   {
-    id: 1,
     label: '缘觉塔'
   },
   {
-    id: 2,
     label: '赤金的城墟',
   },
   {
-    id: 3,
     label: '熔铁的孤塞',
   }
 ]
 
-export const relics = [
-  {
-    instanceId: 1,
-    id: 1,
-    label: '林深的记忆'
-  },
-  {
-    instanceId: 1,
-    id: 2,
-    label: '饰金之梦'
-  },
-  {
-    instanceId: 2,
-    id: 3,
+const instance =addInstanceId(Area.AreaId,instanceList)
+
+const relicsList = [
+{
+  instanceId: instance[0].id,
+  label: '林深的记忆'
+},
+{
+  instanceId: instance[0].id,
+  label: '饰金之梦'
+},
+{
+    instanceId: instance[1].id,
     label: '乐园遗落之花'
   },
   {
-    instanceId: 2,
-    id: 4,
+    instanceId: instance[1].id,
     label: '沙上楼阁史话'
   },
   {
-    instanceId: 3,
-    id: 5,
+    instanceId: instance[2].id,
     label: '水仙之梦'
   },
   {
-    instanceId: 3,
-    id: 6,
+    instanceId: instance[2].id,
     label: '花海甘露之光'
   }
 ]
+
+export const relics = addRelicsId(relicsList)
+
+export const instanceData = Totree([...instance, ...relics], Area.AreaId, 'id', 'instanceId')
