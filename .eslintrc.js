@@ -2,19 +2,26 @@
  * @Author: tanshaobo
  * @Date: 2022-11-18 10:00:38
  * @LastEditors: tanshaobo
- * @LastEditTime: 2022-11-18 10:09:14
- * @Description: file content
+ * @LastEditTime: 2026-09-23 00:00:00
+ * @Description: ESLint 8 + airbnb-base 15 升级，补充 Vue 3.4 编译器宏全局声明
  * @FilePath: \yuanshen-utils\.eslintrc.js
  */
 module.exports = {
   globals: {
     defineEmits: true,
     defineProps: true,
-    defineExpose: true
+    defineExpose: true,
+    defineModel: true,
+    defineOptions: true,
+    defineSlots: true,
+    useTemplateRef: true,
+    useAttrs: true,
+    useSlots: true,
+    useEmits: true
   },
   env: {
     browser: true,
-    es2021: true,
+    es2022: true,
     node: true,
     'vue/setup-compiler-macros': true
   },
@@ -22,63 +29,59 @@ module.exports = {
     'plugin:vue/vue3-essential',
     'eslint:recommended',
     'airbnb-base',
-    'plugin:prettier/recommended' // 添加 prettier 插件
+    'plugin:prettier/recommended'
   ],
   parserOptions: {
-    ecmaVersion: 12,
+    ecmaVersion: 'latest',
     sourceType: 'module'
   },
   plugins: ['vue'],
   settings: {
     'import/resolver': {
-      // 识别别名
       alias: {
         map: [
           ['@', './src'],
           ['@common', './src/components/common']
         ],
-        extensions: ['.ts', '.js', '.jsx', '.json']
+        extensions: ['.js', '.json']
       }
     }
   },
   rules: {
-    // "off"或者0    //关闭规则关闭
-    // "warn"或者1    //在打开的规则作为警告（不影响退出代码）
-    // "error"或者2    //把规则作为一个错误（退出代码触发时为1
-    'arrow-parens': 0, // 箭头函数用小括号括起来
-    'arrow-spacing': 0, //= >的前/后括号
-    'no-plusplus': 0, // 可使用依云操作符 ++ 和 --
-    'no-nested-ternary': 0, // 可使用三元表达式
-    'consistent-return': 0, // 箭头函数可以没有返回值
-    'no-param-reassign': 0, // 允许对函数的参数重新赋值
-    'no-shadow': 0, // 局部变量可以与外层变量重名
-    'no-v-model-argument': 0, // v-model 不能有参数校验关闭
-    'prefer-spread': 0, // 要求使用扩展运算符而非 .apply()
-    'no-multi-assign': 0, // a = b = c = d
-    'default-case': 0, // 默认值预设
-    'no-case-declarations': 0, // case 中可以声明变量
-    'no-bitwise': 0, // 允许意外字符
-    'no-unused-expressions': 0, // 期望赋值或函数调用，却看到一个表达式。
-    'no-use-before-define': 0, // 函数可以先使用后声明
-    'no-restricted-syntax': 0, // for in
-    'prefer-rest-params': 0, // 参数可以使用arguments
-    'guard-for-in': 0, // for in 里面可以放if
-    'no-cond-assign': 0, // 允许在if语句判断条件里面赋值
-    'no-continue': 0, // 允许使用continue
-    'id-length': 0, // 变量名长度
-    'id-match': 0, // 命名检测
-    'prefer-const': 0, // 要求使用 const 声明那些声明后不再被修改的变量
-    'no-underscore-dangle': 0, // 标识符不能以_开头或结尾
-    'no-lonely-if': 0, // 允许只写if不写else
-    'no-unresolved': 0, // 引入模块无法解析
+    'arrow-parens': 0,
+    'arrow-spacing': 0,
+    'no-plusplus': 0,
+    'no-nested-ternary': 0,
+    'consistent-return': 0,
+    'no-param-reassign': 0,
+    'no-shadow': 0,
+    'no-v-model-argument': 0,
+    'prefer-spread': 0,
+    'no-multi-assign': 0,
+    'default-case': 0,
+    'no-case-declarations': 0,
+    'no-bitwise': 0,
+    'no-unused-expressions': 0,
+    'no-use-before-define': 0,
+    'no-restricted-syntax': 0,
+    'prefer-rest-params': 0,
+    'guard-for-in': 0,
+    'no-cond-assign': 0,
+    'no-continue': 0,
+    'id-length': 0,
+    'id-match': 0,
+    'prefer-const': 0,
+    'no-underscore-dangle': 0,
+    'no-lonely-if': 0,
+    'no-unresolved': 0,
     'no-unused-vars': [
       1,
       {
-        // 参数不检查
         args: 'none'
       }
     ],
-    'vue/script-setup-uses-vars': 0,
-    eqeqeq: 0 // 允许使用 == !=
+    eqeqeq: 0,
+    'vue/no-v-html': 0,
+    'vue/multi-word-component-names': 0
   }
 }

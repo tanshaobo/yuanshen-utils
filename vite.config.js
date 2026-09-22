@@ -2,74 +2,42 @@
  * @Author: tanshaobo
  * @Date: 2022-11-18 10:00:38
  * @LastEditors: tanshaobo
- * @LastEditTime: 2025-12-30 14:33:00
- * @Description: file content
+ * @LastEditTime: 2026-09-23 01:42:56
+ * @Description: Vite 5 升级配置，移除 vite-plugin-fs，alias 改为对象形式
  * @FilePath: \yuanshen-utils\vite.config.js
  */
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import path from 'path'
-import fs from 'vite-plugin-fs' 
 
-// 设置别名
-const resolve = {
-  alias: [
-    { find: '@', replacement: `${path.resolve(__dirname, './src')}` },
-  ]
-}
-// 设置开发服务
-const server = {
-  host: 'localhost', // 主机
-  port: 9527, // 端口
-  open: true, // 自动打开浏览器 或选择浏览器
-  cors: true, // 允许跨域
-  proxy: { // 代理
-    '/api': {
-      target: 'http://jsonplaceholder.typicode.com',
-      changeOrigin: true,
-      rewrite: (path) => path.replace(/^\/api/, '')
-    }
-  }
-}
-
-// css预设
-// let vfile = String.raw`${path.resolve(__dirname, './src/style/element-variables.scss')}`
-
-// if (os.type() === 'Windows_NT') {
-//   vfile = vfile.replace(/\\/g, '\\\\')
-// }
-const css = {
-  modules: {
-    generateScopedName: '[name]__[local]___[hash:base64:5]'
-  }
-  // preprocessorOptions: {
-  //   scss: {
-  //     additionalData: `@import '${vfile}';`
-  //   }
-  // }
-}
-const build ={
-  outDir:  'docs', // 打包输出目录
-  // rollupOptions: {
-  //   output: {
-  //     manualChunks(id) {
-  //       if (id.includes('node_modules')) {
-  //         return id.toString().split('node_modules/')[1].split('/')[0].toString();
-  //       }
-  //     }
-  //   }
-  // }
-}
-
-// https://vitejs.dev/config/
 export default defineConfig({
-  base:'./',
-  resolve,
-  server,
-  css,
-  build,
-  plugins: [
-    vue(),
-    fs()
-  ]
+  base: './',
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src')
+    }
+  },
+  server: {
+    host: 'localhost',
+    port: 9527,
+    open: true,
+    cors: true,
+    strictPort: true,
+    proxy: {
+      '/api': {
+        target: 'http://jsonplaceholder.typicode.com',
+        changeOrigin: true,
+        rewrite: (p) => p.replace(/^\/api/, '')
+      }
+    }
+  },
+  css: {
+    modules: {
+      generateScopedName: '[name]__[local]___[hash:base64:5]'
+    }
+  },
+  build: {
+    outDir: 'docs'
+  },
+  plugins: [vue()]
 })

@@ -67,7 +67,6 @@ import { partsList, relicsList } from '@/config/relics'
 import roleList from '@/config/Role/index'
 import deepCopyObject from '@/utils/deepCopyObject'
 import { intersect } from '@/utils/ArrayExpand'
-import fs from 'vite-plugin-fs/browser'
 
 const state = reactive({
   baseStatList: baseStats,
@@ -76,12 +75,6 @@ const state = reactive({
   relicsList,
   partsList
 })
-
-console.log(roleList, 'roleList')
-const f = async () => {
-  const file = await fs.writeFile('./src/a.js', `export const a = {a: 'abc'}; export default a`)
-  console.log(file, 'file')
-}
 
 const form = reactive({
   relics: '',

@@ -1,11 +1,13 @@
-import { createStore } from 'vuex'
-import createPersistedState from 'vuex-persistedstate'
-import modules from './modules'
-// 内存持久化
+import { defineStore } from 'pinia'
 
-const store = createStore({
-  modules,
-  plugins: [createPersistedState()]
+export const useTestStore = defineStore('test', {
+  state: () => ({
+    count: 10
+  }),
+  actions: {
+    setCount(count) {
+      this.count = count
+    }
+  },
+  persist: true
 })
-
-export default store

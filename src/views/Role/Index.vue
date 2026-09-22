@@ -5,27 +5,6 @@
         <el-option v-for="item in attrList" :label="item.label" :value="item.id"></el-option>
       </el-select>
     </el-form-item>
-    <!-- <el-form-item>
-      <el-checkbox-group v-model="checkStats">
-        <el-checkbox-button v-for="item in baseStats" :key="item.label" :value="item.id">
-          {{ item.desc }}
-        </el-checkbox-button>
-      </el-checkbox-group>
-    </el-form-item> -->
-    <!-- <el-form-item>
-      <el-select placeholder="武器" filterable>
-        <el-option v-for="item in partsList" :label="item.label" :value="item.id"></el-option>
-      </el-select>
-    </el-form-item> -->
-    <!-- <el-form-item>
-      <el-select placeholder="区域" filterable>
-        <el-option v-for="item in partsList" :label="item.label" :value="item.id"></el-option>
-      </el-select>
-    </el-form-item> -->
-    <!-- 性别 -->
-    <!-- <el-form-item>
-      <el-radio></el-radio>
-    </el-form-item> -->
     <el-form-item>
       <el-button @click="Search">查询</el-button>
       <el-button @click="Add">新增</el-button>
@@ -49,7 +28,6 @@
       </div>
     </template>
   </Grid>
-  角色
 </template>
 
 <script setup>
@@ -57,13 +35,9 @@ import { reactive, toRefs } from 'vue'
 import { useRouter } from 'vue-router'
 import roleList from '@/config/Role/index'
 import Grid from '@/components/layout/Grid/index.vue'
-import fs from 'vite-plugin-fs/browser'
 
 const form = reactive({
-  // sex: 0,
   attr: 0,
-  // weapon: 0,
-  // level: [],
   area: []
 })
 
@@ -76,16 +50,13 @@ state.currentRoleList = roleList
 
 const router = useRouter()
 const Search = () => {}
-const Add = async () => {
+const Add = () => {
   router.push({
     name: 'RoleEdit',
     params: {
       id: 0
     }
   })
-  // const file = await fs.writeFile('./src/a.js', `export const a = {a: 'abc'}; export default a`)
-  // console.log(file, 'add')
-  // return
 }
 const Edit = (item) => {
   router.push({
@@ -96,11 +67,8 @@ const Edit = (item) => {
     state: item
   })
 }
-const Delete = async (item) => {
-  console.log(fs)
-  const file = await fs.rm('./src/a.js')
-  console.log(file, 'delete')
-  return
+const Delete = (item) => {
+  console.log('Delete:', item)
 }
 const Detail = (item) => {
   router.push({

@@ -325,7 +325,6 @@ import { baseStats } from '@/config/stats'
 import { relicsList } from '@/config/relics'
 import talentMaterial from '@/config/roleTalent'
 import { useRoute, useRouter } from 'vue-router'
-import fs from 'vite-plugin-fs/browser'
 import role from '@/config/Role/index'
 
 let roleId = 0
@@ -342,10 +341,6 @@ const init = async () => {
   }
   roleId = id
   const { name: roleName } = role.find((i) => i.id === id)
-  // // fs 获取文件内容方式 需要截取字符串并通过eval函数转为语句
-  // const result = await fs.readFile(`./src/config/Role/${roleName}.js`)
-  // const data = eval(`(${result.slice(13).slice(0, -21)})`)
-  // vite glob 获取方式 需要全匹配目录文件后才能拿到结果
   const r = await import.meta.glob(`@/config/Role/*.js`)[`../../config/Role/${roleName}.js`]()
   const data = r.default
 
@@ -446,14 +441,16 @@ const Ensure = async (formEl) => {
         ...form
       }
       state.btnLoading = true
-      const p = fs.writeFile(
-        `./src/config/Role/${form.name}.js`,
-        `const role = ${JSON.stringify(data)}\nexport default role`
-      )
-      p.then((v) => {
-        state.btnLoading = false
-        Back(1)
-      })
+      const code = `const role = ${JSON.stringify(data)}\nexport default role`
+      const blob = new Blob([code], { type: 'application/javascript' })
+      const url = URL.createObjectURL(blob)
+      const a = document.createElement('a')
+      a.href = url
+      a.download = `${form.name}.js`
+      a.click()
+      URL.revokeObjectURL(url)
+      state.btnLoading = false
+      Back(1)
     } else {
       state.btnLoading = false
     }
