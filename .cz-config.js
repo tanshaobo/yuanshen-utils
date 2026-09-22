@@ -1,3 +1,6 @@
+// Agent commit 流程约定：
+// 默认输出 cz 交互步骤表（type/scope/subject/body/breaking），body 每行末尾用 | 换行
+// 如需命令行 git commit 方式，由用户明确指定
 module.exports = {
   // type 类型（定义之后，可通过上下键选择）
   types: [
