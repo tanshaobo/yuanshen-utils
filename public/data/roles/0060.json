@@ -1,0 +1,55 @@
+{
+  "id": "0060",
+  "name": "莱依拉",
+  "elemental": "Cryo",
+  "talent": 11,
+  "header": "header/莱依拉.png",
+  "relics": [
+    "1-4-7"
+  ],
+  "flower": {
+    "main": 6,
+    "deputy": [
+      7,
+      8,
+      10,
+      3
+    ]
+  },
+  "plume": {
+    "main": 4,
+    "deputy": [
+      7,
+      8,
+      10,
+      3
+    ]
+  },
+  "sands": {
+    "main": 3,
+    "deputy": [
+      7,
+      8,
+      10,
+      6
+    ]
+  },
+  "goblet": {
+    "main": 3,
+    "deputy": [
+      7,
+      8,
+      10,
+      6
+    ]
+  },
+  "circlet": {
+    "main": 3,
+    "deputy": [
+      7,
+      10,
+      8,
+      6
+    ]
+  }
+}

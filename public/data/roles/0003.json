@@ -1,0 +1,53 @@
+{
+  "id": "0003",
+  "name": "安柏",
+  "elemental": "Pryo",
+  "talent": 1,
+  "header": "header/安柏.png",
+  "relics": [
+    "0-1-2"
+  ],
+  "flower": {
+    "main": 6,
+    "deputy": [
+      1,
+      7,
+      8,
+      10
+    ]
+  },
+  "plume": {
+    "main": 4,
+    "deputy": [
+      1,
+      7,
+      8,
+      10
+    ]
+  },
+  "sands": {
+    "main": 1,
+    "deputy": [
+      7,
+      8,
+      10
+    ]
+  },
+  "goblet": {
+    "main": 11,
+    "deputy": [
+      1,
+      7,
+      8,
+      10
+    ]
+  },
+  "circlet": {
+    "main": 8,
+    "deputy": [
+      1,
+      7,
+      10
+    ]
+  }
+}

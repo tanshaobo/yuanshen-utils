@@ -27,6 +27,7 @@ module.exports = {
     ['deps', '项目依赖'],
     ['auth', '对 auth 修改'],
     ['config', '项目配置相关'],
+    ['server', '服务相关'],
     ['other', '其他修改'],
     // 如果选择 custom，后面会让你再输入一个自定义的 scope。也可以不设置此项，把后面的 allowCustomScopes 设置为 true
     ['custom', '以上都不是？我要自定义']
@@ -74,7 +75,7 @@ module.exports = {
   allowBreakingChanges: ['feat', 'fix'],
 
   // 跳过要询问的步骤
-  skipQuestions: ['body', 'footer'],
+  skipQuestions: ['footer'],
 
   // subject 限制长度
   subjectLimit: 100,

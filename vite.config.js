@@ -2,32 +2,32 @@
  * @Author: tanshaobo
  * @Date: 2022-11-18 10:00:38
  * @LastEditors: tanshaobo
- * @LastEditTime: 2026-09-23 01:42:56
+ * @LastEditTime: 2026-09-23 02:27:54
  * @Description: Vite 5 升级配置，移除 vite-plugin-fs，alias 改为对象形式
  * @FilePath: \yuanshen-utils\vite.config.js
  */
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import path from 'path'
+import path from 'node:path'
+import { fileURLToPath, URL } from 'node:url'
 
-export default defineConfig({
-  base: './',
+export default defineConfig(({ mode }) => ({
+  base: mode === 'production' ? './' : '/',
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './src')
+      '@': path.resolve(fileURLToPath(new URL('.', import.meta.url)), './src')
     }
   },
   server: {
     host: 'localhost',
-    port: 9527,
+    port: 5173,
     open: true,
     cors: true,
-    strictPort: true,
+    strictPort: false,
     proxy: {
       '/api': {
-        target: 'http://jsonplaceholder.typicode.com',
-        changeOrigin: true,
-        rewrite: (p) => p.replace(/^\/api/, '')
+        target: `http://localhost:${process.env.PORT || 3001}`,
+        changeOrigin: true
       }
     }
   },
@@ -40,4 +40,4 @@ export default defineConfig({
     outDir: 'docs'
   },
   plugins: [vue()]
-})
+}))

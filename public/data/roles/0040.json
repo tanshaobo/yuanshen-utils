@@ -1,0 +1,53 @@
+{
+  "id": "0040",
+  "name": "九条裟罗",
+  "elemental": "Electro",
+  "talent": 8,
+  "header": "header/九条裟罗.png",
+  "relics": [
+    "3-1-1"
+  ],
+  "flower": {
+    "main": 6,
+    "deputy": [
+      1,
+      7,
+      8,
+      10
+    ]
+  },
+  "plume": {
+    "main": 4,
+    "deputy": [
+      1,
+      7,
+      8,
+      10
+    ]
+  },
+  "sands": {
+    "main": 10,
+    "deputy": [
+      7,
+      8,
+      1
+    ]
+  },
+  "goblet": {
+    "main": 11,
+    "deputy": [
+      1,
+      7,
+      8,
+      10
+    ]
+  },
+  "circlet": {
+    "main": 7,
+    "deputy": [
+      1,
+      10,
+      8
+    ]
+  }
+}
