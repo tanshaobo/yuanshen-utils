@@ -2,8 +2,8 @@
  * @Author: tanshaobo
  * @Date: 2026-09-25 00:00:00
  * @LastEditors: tanshaobo
- * @LastEditTime: 2026-10-01 03:23:19
- * @Description: 圣遗物潜力分析
+ * @LastEditTime: 2026-10-01 23:08:11
+ * @Description: 圣遗物潜力分析 测试
  * @FilePath: \yuanshen-utils\src\views\Artifacts\Potential\index.vue
 -->
 <template>
