@@ -1,0 +1,54 @@
+{
+  "id": "0048",
+  "name": "八重神子",
+  "elemental": "Electro",
+  "talent": 9,
+  "header": "header/八重神子.png",
+  "relics": [
+    "4-1-2",
+    "5-1-2"
+  ],
+  "flower": {
+    "main": 6,
+    "deputy": [
+      1,
+      7,
+      8,
+      9
+    ]
+  },
+  "plume": {
+    "main": 4,
+    "deputy": [
+      1,
+      7,
+      8,
+      9
+    ]
+  },
+  "sands": {
+    "main": 1,
+    "deputy": [
+      7,
+      8,
+      9
+    ]
+  },
+  "goblet": {
+    "main": 11,
+    "deputy": [
+      1,
+      7,
+      8,
+      9
+    ]
+  },
+  "circlet": {
+    "main": 8,
+    "deputy": [
+      1,
+      7,
+      9
+    ]
+  }
+}

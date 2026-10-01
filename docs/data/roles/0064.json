@@ -1,0 +1,53 @@
+{
+  "id": "0064",
+  "name": "艾尔海森",
+  "elemental": "Dendro",
+  "talent": 11,
+  "header": "header/艾尔海森.png",
+  "relics": [
+    "4-1-2"
+  ],
+  "flower": {
+    "main": 6,
+    "deputy": [
+      1,
+      7,
+      8,
+      9
+    ]
+  },
+  "plume": {
+    "main": 4,
+    "deputy": [
+      1,
+      7,
+      8,
+      9
+    ]
+  },
+  "sands": {
+    "main": 9,
+    "deputy": [
+      7,
+      8,
+      1
+    ]
+  },
+  "goblet": {
+    "main": 11,
+    "deputy": [
+      1,
+      7,
+      8,
+      9
+    ]
+  },
+  "circlet": {
+    "main": 7,
+    "deputy": [
+      1,
+      8,
+      9
+    ]
+  }
+}

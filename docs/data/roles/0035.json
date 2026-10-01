@@ -1,0 +1,52 @@
+{
+  "id": "0035",
+  "name": "枫原万叶",
+  "elemental": "Anemo",
+  "talent": 5,
+  "header": "header/枫原万叶.png",
+  "relics": [
+    "1-2-3"
+  ],
+  "flower": {
+    "main": 6,
+    "deputy": [
+      7,
+      8,
+      10,
+      9
+    ]
+  },
+  "plume": {
+    "main": 4,
+    "deputy": [
+      7,
+      8,
+      10,
+      9
+    ]
+  },
+  "sands": {
+    "main": 9,
+    "deputy": [
+      7,
+      8,
+      10
+    ]
+  },
+  "goblet": {
+    "main": 9,
+    "deputy": [
+      7,
+      8,
+      10
+    ]
+  },
+  "circlet": {
+    "main": 9,
+    "deputy": [
+      7,
+      10,
+      8
+    ]
+  }
+}

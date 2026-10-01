@@ -1,0 +1,54 @@
+{
+  "id": "0007",
+  "name": "雷泽",
+  "elemental": "Electro",
+  "talent": 2,
+  "header": "header/雷泽.png",
+  "relics": [
+    "0-1-1",
+    "1-4-8"
+  ],
+  "flower": {
+    "main": 6,
+    "deputy": [
+      1,
+      7,
+      8,
+      10
+    ]
+  },
+  "plume": {
+    "main": 4,
+    "deputy": [
+      7,
+      8,
+      10,
+      1
+    ]
+  },
+  "sands": {
+    "main": 1,
+    "deputy": [
+      7,
+      8,
+      10
+    ]
+  },
+  "goblet": {
+    "main": 11,
+    "deputy": [
+      7,
+      8,
+      1,
+      10
+    ]
+  },
+  "circlet": {
+    "main": 7,
+    "deputy": [
+      10,
+      1,
+      8
+    ]
+  }
+}

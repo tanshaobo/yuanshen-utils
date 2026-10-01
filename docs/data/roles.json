@@ -1,0 +1,602 @@
+[
+  {
+    "id": "0003",
+    "name": "安柏",
+    "elemental": "Pryo",
+    "header": "header/安柏.png"
+  },
+  {
+    "id": "0004",
+    "name": "凯亚",
+    "elemental": "Cryo",
+    "header": "header/凯亚.png"
+  },
+  {
+    "id": "0005",
+    "name": "丽莎",
+    "elemental": "Electro",
+    "header": "header/丽莎.png"
+  },
+  {
+    "id": "0006",
+    "name": "芭芭拉",
+    "elemental": "Hydro",
+    "header": "header/芭芭拉.png"
+  },
+  {
+    "id": "0007",
+    "name": "雷泽",
+    "elemental": "Electro",
+    "header": "header/雷泽.png"
+  },
+  {
+    "id": "0008",
+    "name": "香菱",
+    "elemental": "Pryo",
+    "header": "header/香菱.png"
+  },
+  {
+    "id": "0009",
+    "name": "北斗",
+    "elemental": "Electro",
+    "header": "header/北斗.png"
+  },
+  {
+    "id": "0010",
+    "name": "行秋",
+    "elemental": "Hydro",
+    "header": "header/行秋.png"
+  },
+  {
+    "id": "0011",
+    "name": "凝光",
+    "elemental": "Geo",
+    "header": "header/凝光.png"
+  },
+  {
+    "id": "0012",
+    "name": "菲谢尔",
+    "elemental": "Electro",
+    "header": "header/菲谢尔.png"
+  },
+  {
+    "id": "0013",
+    "name": "班尼特",
+    "elemental": "Pryo",
+    "header": "header/班尼特.png"
+  },
+  {
+    "id": "0014",
+    "name": "诺艾尔",
+    "elemental": "Geo",
+    "header": "header/诺艾尔.png"
+  },
+  {
+    "id": "0015",
+    "name": "重云",
+    "elemental": "Cryo",
+    "header": "header/重云.png"
+  },
+  {
+    "id": "0016",
+    "name": "砂糖",
+    "elemental": "Anemo",
+    "header": "header/砂糖.png"
+  },
+  {
+    "id": "0017",
+    "name": "琴",
+    "elemental": "Anemo",
+    "header": "header/琴.png"
+  },
+  {
+    "id": "0018",
+    "name": "迪卢克",
+    "elemental": "Pryo",
+    "header": "header/迪卢克.png"
+  },
+  {
+    "id": "0019",
+    "name": "七七",
+    "elemental": "Cryo",
+    "header": "header/七七.png"
+  },
+  {
+    "id": "0020",
+    "name": "莫娜",
+    "elemental": "Hydro",
+    "header": "header/莫娜.png"
+  },
+  {
+    "id": "0021",
+    "name": "刻晴",
+    "elemental": "Electro",
+    "header": "header/刻晴.png"
+  },
+  {
+    "id": "0022",
+    "name": "温迪",
+    "elemental": "Anemo",
+    "header": "header/温迪.png"
+  },
+  {
+    "id": "0023",
+    "name": "可莉",
+    "elemental": "Pryo",
+    "header": "header/可莉.png"
+  },
+  {
+    "id": "0024",
+    "name": "迪奥娜",
+    "elemental": "Cryo",
+    "header": "header/迪奥娜.png"
+  },
+  {
+    "id": "0025",
+    "name": "达达利亚",
+    "elemental": "Hydro",
+    "header": "header/达达利亚.png"
+  },
+  {
+    "id": "0026",
+    "name": "辛焱",
+    "elemental": "Pryo",
+    "header": "header/辛焱.png"
+  },
+  {
+    "id": "0027",
+    "name": "钟离",
+    "elemental": "Geo",
+    "header": "header/钟离.png"
+  },
+  {
+    "id": "0028",
+    "name": "阿贝多",
+    "elemental": "Geo",
+    "header": "header/阿贝多.png"
+  },
+  {
+    "id": "0029",
+    "name": "甘雨",
+    "elemental": "Cryo",
+    "header": "header/甘雨.png"
+  },
+  {
+    "id": "0030",
+    "name": "魈",
+    "elemental": "Anemo",
+    "header": "header/魈.png"
+  },
+  {
+    "id": "0031",
+    "name": "胡桃",
+    "elemental": "Pryo",
+    "header": "header/胡桃.png"
+  },
+  {
+    "id": "0032",
+    "name": "罗莎莉亚",
+    "elemental": "Cryo",
+    "header": "header/罗莎莉亚.png"
+  },
+  {
+    "id": "0033",
+    "name": "烟绯",
+    "elemental": "Pryo",
+    "header": "header/烟绯.png"
+  },
+  {
+    "id": "0034",
+    "name": "优菈",
+    "elemental": "Cryo",
+    "header": "header/优菈.png"
+  },
+  {
+    "id": "0035",
+    "name": "枫原万叶",
+    "elemental": "Anemo",
+    "header": "header/枫原万叶.png"
+  },
+  {
+    "id": "0036",
+    "name": "神里绫华",
+    "elemental": "Cryo",
+    "header": "header/神里绫华.png"
+  },
+  {
+    "id": "0037",
+    "name": "早柚",
+    "elemental": "Anemo",
+    "header": "header/早柚.png"
+  },
+  {
+    "id": "0038",
+    "name": "宵宫",
+    "elemental": "Pryo",
+    "header": "header/宵宫.png"
+  },
+  {
+    "id": "0039",
+    "name": "埃洛伊",
+    "elemental": "Cryo",
+    "header": "header/埃洛伊.png"
+  },
+  {
+    "id": "0040",
+    "name": "九条裟罗",
+    "elemental": "Electro",
+    "header": "header/九条裟罗.png"
+  },
+  {
+    "id": "0041",
+    "name": "雷电将军",
+    "elemental": "Electro",
+    "header": "header/雷电将军.png"
+  },
+  {
+    "id": "0042",
+    "name": "珊瑚宫心海",
+    "elemental": "Hydro",
+    "header": "header/珊瑚宫心海.png"
+  },
+  {
+    "id": "0043",
+    "name": "托马",
+    "elemental": "Pryo",
+    "header": "header/托马.png"
+  },
+  {
+    "id": "0044",
+    "name": "五郎",
+    "elemental": "Geo",
+    "header": "header/五郎.png"
+  },
+  {
+    "id": "0045",
+    "name": "荒泷一斗",
+    "elemental": "Geo",
+    "header": "header/荒泷一斗.png"
+  },
+  {
+    "id": "0046",
+    "name": "云堇",
+    "elemental": "Geo",
+    "header": "header/云堇.png"
+  },
+  {
+    "id": "0047",
+    "name": "申鹤",
+    "elemental": "Cryo",
+    "header": "header/申鹤.png"
+  },
+  {
+    "id": "0048",
+    "name": "八重神子",
+    "elemental": "Electro",
+    "header": "header/八重神子.png"
+  },
+  {
+    "id": "0049",
+    "name": "神里绫人",
+    "elemental": "Hydro",
+    "header": "header/神里绫人.png"
+  },
+  {
+    "id": "0050",
+    "name": "夜兰",
+    "elemental": "Hydro",
+    "header": "header/夜兰.png"
+  },
+  {
+    "id": "0051",
+    "name": "久岐忍",
+    "elemental": "Electro",
+    "header": "header/久岐忍.png"
+  },
+  {
+    "id": "0052",
+    "name": "鹿野院平藏",
+    "elemental": "Anemo",
+    "header": "header/鹿野院平藏.png"
+  },
+  {
+    "id": "0053",
+    "name": "柯莱",
+    "elemental": "Dendro",
+    "header": "header/柯莱.png"
+  },
+  {
+    "id": "0054",
+    "name": "提纳里",
+    "elemental": "Dendro",
+    "header": "header/提纳里.png"
+  },
+  {
+    "id": "0055",
+    "name": "多莉",
+    "elemental": "Electro",
+    "header": "header/多莉.png"
+  },
+  {
+    "id": "0056",
+    "name": "坎蒂丝",
+    "elemental": "Hydro",
+    "header": "header/坎蒂丝.png"
+  },
+  {
+    "id": "0057",
+    "name": "赛诺",
+    "elemental": "Electro",
+    "header": "header/赛诺.png"
+  },
+  {
+    "id": "0058",
+    "name": "妮露",
+    "elemental": "Hydro",
+    "header": "header/妮露.png"
+  },
+  {
+    "id": "0059",
+    "name": "纳西妲",
+    "elemental": "Dendro",
+    "header": "header/纳西妲.png"
+  },
+  {
+    "id": "0060",
+    "name": "莱依拉",
+    "elemental": "Cryo",
+    "header": "header/莱依拉.png"
+  },
+  {
+    "id": "0061",
+    "name": "珐露珊",
+    "elemental": "Anemo",
+    "header": "header/珐露珊.png"
+  },
+  {
+    "id": "0062",
+    "name": "流浪者",
+    "elemental": "Anemo",
+    "header": "header/流浪者.png"
+  },
+  {
+    "id": "0063",
+    "name": "瑶瑶",
+    "elemental": "Dendro",
+    "header": "header/瑶瑶.png"
+  },
+  {
+    "id": "0064",
+    "name": "艾尔海森",
+    "elemental": "Dendro",
+    "header": "header/艾尔海森.png"
+  },
+  {
+    "id": "0065",
+    "name": "迪希雅",
+    "elemental": "Pryo",
+    "header": "header/迪希雅.png"
+  },
+  {
+    "id": "0066",
+    "name": "米卡",
+    "elemental": "Cryo",
+    "header": "header/米卡.png"
+  },
+  {
+    "id": "0067",
+    "name": "卡维",
+    "elemental": "Dendro",
+    "header": "header/卡维.png"
+  },
+  {
+    "id": "0068",
+    "name": "白术",
+    "elemental": "Dendro",
+    "header": "header/白术.png"
+  },
+  {
+    "id": "0069",
+    "name": "绮良良",
+    "elemental": "Dendro",
+    "header": "header/绮良良.png"
+  },
+  {
+    "id": "0070",
+    "name": "琳妮特",
+    "elemental": "Anemo",
+    "header": "header/琳妮特.png"
+  },
+  {
+    "id": "0071",
+    "name": "林尼",
+    "elemental": "Pryo",
+    "header": "header/林尼.png"
+  },
+  {
+    "id": "0072",
+    "name": "菲米尼",
+    "elemental": "Cryo",
+    "header": "header/菲米尼.png"
+  },
+  {
+    "id": "0073",
+    "name": "纳维莱特",
+    "elemental": "Hydro",
+    "header": "header/纳维莱特.png"
+  },
+  {
+    "id": "0074",
+    "name": "莱欧斯利",
+    "elemental": "Cryo",
+    "header": "header/莱欧斯利.png"
+  },
+  {
+    "id": "0075",
+    "name": "夏洛蒂",
+    "elemental": "Cryo",
+    "header": "header/夏洛蒂.png"
+  },
+  {
+    "id": "0076",
+    "name": "芙宁娜",
+    "elemental": "Hydro",
+    "header": "header/芙宁娜.png"
+  },
+  {
+    "id": "0077",
+    "name": "娜维娅",
+    "elemental": "Geo",
+    "header": "header/娜维娅.png"
+  },
+  {
+    "id": "0078",
+    "name": "夏沃蕾",
+    "elemental": "Pryo",
+    "header": "header/夏沃蕾.png"
+  },
+  {
+    "id": "0079",
+    "name": "嘉明",
+    "elemental": "Pryo",
+    "header": "header/嘉明.png"
+  },
+  {
+    "id": "0080",
+    "name": "闲云",
+    "elemental": "Anemo",
+    "header": "header/闲云.png"
+  },
+  {
+    "id": "0081",
+    "name": "千织",
+    "elemental": "Geo",
+    "header": "header/千织.png"
+  },
+  {
+    "id": "0082",
+    "name": "阿蕾奇诺",
+    "elemental": "Pryo",
+    "header": "header/阿蕾奇诺.png"
+  },
+  {
+    "id": "0083",
+    "name": "赛索斯",
+    "elemental": "Electro",
+    "header": "header/赛索斯.png"
+  },
+  {
+    "id": "0084",
+    "name": "克洛琳德",
+    "elemental": "Electro",
+    "header": "header/克洛琳德.png"
+  },
+  {
+    "id": "0085",
+    "name": "希格雯",
+    "elemental": "Hydro",
+    "header": "header/希格雯.png"
+  },
+  {
+    "id": "0086",
+    "name": "艾梅莉埃",
+    "elemental": "Dendro",
+    "header": "header/艾梅莉埃.png"
+  },
+  {
+    "id": "0087",
+    "name": "卡齐娜",
+    "elemental": "Geo",
+    "header": "header/卡齐娜.png"
+  },
+  {
+    "id": "0088",
+    "name": "玛拉妮",
+    "elemental": "Hydro",
+    "header": "header/玛拉妮.png"
+  },
+  {
+    "id": "0089",
+    "name": "基尼奇",
+    "elemental": "Hydro",
+    "header": "header/基尼奇.png"
+  },
+  {
+    "id": "0090",
+    "name": "希诺宁",
+    "elemental": "Geo",
+    "header": "header/希诺宁.png"
+  },
+  {
+    "id": "0091",
+    "name": "欧洛伦",
+    "elemental": "Electro",
+    "header": "header/欧洛伦.png"
+  },
+  {
+    "id": "0092",
+    "name": "恰斯卡",
+    "elemental": "Anemo",
+    "header": "header/恰斯卡.png"
+  },
+  {
+    "id": "0093",
+    "name": "茜特菈莉",
+    "elemental": "Cryo",
+    "header": "header/茜特菈莉.png"
+  },
+  {
+    "id": "0094",
+    "name": "玛薇卡",
+    "elemental": "Pryo",
+    "header": "header/玛薇卡.png"
+  },
+  {
+    "id": "0095",
+    "name": "蓝砚",
+    "elemental": "Anemo",
+    "header": "header/蓝砚.png"
+  },
+  {
+    "id": "0096",
+    "name": "梦见月瑞希",
+    "elemental": "Anemo",
+    "header": "header/梦见月瑞希.png"
+  },
+  {
+    "id": "0097",
+    "name": "伊安珊",
+    "elemental": "Electro",
+    "header": "header/伊安珊.png"
+  },
+  {
+    "id": "0098",
+    "name": "瓦雷莎",
+    "elemental": "Electro",
+    "header": "header/瓦雷莎.png"
+  },
+  {
+    "id": "0099",
+    "name": "伊法",
+    "elemental": "Anemo",
+    "header": "header/伊法.png"
+  },
+  {
+    "id": "0100",
+    "name": "爱可菲",
+    "elemental": "Cryo",
+    "header": "header/爱可菲.png"
+  },
+  {
+    "id": "0101",
+    "name": "塔利雅",
+    "elemental": "Hydro",
+    "header": "header/塔利雅.png"
+  },
+  {
+    "id": "0102",
+    "name": "丝柯克",
+    "elemental": "Cryo",
+    "header": "header/丝柯克.png"
+  }
+]

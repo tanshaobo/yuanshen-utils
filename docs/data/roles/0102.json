@@ -1,0 +1,48 @@
+{
+  "id": "0102",
+  "name": "丝柯克",
+  "elemental": "Cryo",
+  "talent": 16,
+  "header": "header/丝柯克.png",
+  "relics": [
+    "6-2-4"
+  ],
+  "flower": {
+    "main": 6,
+    "deputy": [
+      1,
+      7,
+      8
+    ]
+  },
+  "plume": {
+    "main": 4,
+    "deputy": [
+      1,
+      7,
+      8
+    ]
+  },
+  "sands": {
+    "main": 1,
+    "deputy": [
+      7,
+      8
+    ]
+  },
+  "goblet": {
+    "main": 11,
+    "deputy": [
+      1,
+      7,
+      8
+    ]
+  },
+  "circlet": {
+    "main": 8,
+    "deputy": [
+      1,
+      7
+    ]
+  }
+}

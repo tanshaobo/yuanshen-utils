@@ -1,0 +1,1 @@
+const a={AreaId:1,AreaName:"蒙德"},e={AreaId:2,AreaName:"璃月"},r={AreaId:3,AreaName:"稻妻"},s={AreaId:4,AreaName:"须弥"},A={AreaId:5,AreaName:"枫丹"},n={AreaId:6,AreaName:"纳塔"},o={AreaId:7,AreaName:"诺德卡莱"};export{r as D,A as F,e as L,a as M,n as N,s as X,o as a};
