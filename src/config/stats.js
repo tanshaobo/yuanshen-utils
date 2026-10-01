@@ -2,7 +2,7 @@
  * @Author: tanshaobo
  * @Date: 2025-09-28 01:03:41
  * @LastEditors: tanshaobo
- * @LastEditTime: 2025-12-27 21:23:00
+ * @LastEditTime: 2026-09-25 03:09:58
  * @Description: 词条
  * @FilePath: \yuanshen-utils\src\config\stats.js
  */
@@ -94,12 +94,17 @@ const partsList = [
   }
 ]
 
-const createList = (partId) => {
-  let list1, list2
-  if(partId === 1){
-    list1 = baseStats.filter(i=>i.id === 4)
-    list2 = baseStats.filter(i=>[].includes(i.id))
-  }
-
-
+const partsMainStats = {
+  flower: [6],
+  plume: [4],
+  sands: [1, 2, 3, 4, 5, 6, 9, 10],
+  goblet: [1, 2, 3, 4, 5, 6, 9, 11],
+  circlet: [1, 2, 3, 4, 5, 6, 7, 8, 9, 12],
 }
+
+export function getMainStatsByPart(partId) {
+  const ids = partsMainStats[partId] || []
+  return baseStats.filter((s) => ids.includes(s.id))
+}
+
+export { partsList, partsMainStats }
